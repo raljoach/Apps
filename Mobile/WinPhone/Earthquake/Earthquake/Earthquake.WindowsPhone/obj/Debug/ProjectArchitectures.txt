@@ -1,0 +1,1 @@
+c:\users\administrator\documents\visual studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\Earthquake.WindowsPhone.csproj;neutral

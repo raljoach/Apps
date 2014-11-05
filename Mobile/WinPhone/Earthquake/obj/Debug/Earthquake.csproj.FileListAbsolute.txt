@@ -1,0 +1,16 @@
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\bin\Debug\App.xbf
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\bin\Debug\MainPage.xbf
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\bin\Debug\Earthquake.exe
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\bin\Debug\Earthquake.pdb
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\App.g.i.cs
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\App.g.cs
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\MainPage.g.i.cs
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\MainPage.g.cs
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\App.xaml
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\MainPage.xaml
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\App.xbf
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\MainPage.xbf
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\Earthquake.exe
+C:\Users\Administrator\documents\visual studio 2013\Projects\Earthquake\obj\Debug\Earthquake.pdb
