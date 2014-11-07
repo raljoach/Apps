@@ -30,3 +30,8 @@ c:\users\administrator\documents\visual studio 2013\Projects\Earthquake\Earthqua
 c:\users\administrator\documents\visual studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 c:\users\administrator\documents\visual studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\administrator\documents\visual studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\bin\Debug\Styles\Styles.xbf
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\Styles\Styles.g.i.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\Styles\Styles.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\Styles\Styles.xaml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.WindowsPhone\obj\Debug\Styles\Styles.xbf

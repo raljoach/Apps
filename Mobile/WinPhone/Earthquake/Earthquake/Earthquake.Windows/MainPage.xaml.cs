@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Serialization.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +27,30 @@ namespace Earthquake
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Fetch();
+        }
+
+        private async void Fetch()
+        {
+            HttpClient client = new HttpClient();
+
+            var response = await client.GetStreamAsync(new Uri(
+               "http://api.geonames.org/earthquakesJSON?formatted=true&north=44.1&south=-9.9&east=-22.4&west=55.2&username=mkoppelman"));
+
+            var serializer = new DataContractJsonSerializer(typeof(RootObject));
+
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(RootObject));
+            RootObject feed = (RootObject)ser.ReadObject(response);
+            /*foreach (Earthquake e in feed.earthquakes)
+            {
+                System.Diagnostics.Debug.WriteLine(e.src + " " + e.magnitude + " '" + e.lat + "' '" + e.lng + "'");
+            }*/
+            myListView.DataContext = feed;
+
         }
     }
 }

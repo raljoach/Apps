@@ -1,0 +1,1 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\Earthquake.Windows.csproj;neutral
