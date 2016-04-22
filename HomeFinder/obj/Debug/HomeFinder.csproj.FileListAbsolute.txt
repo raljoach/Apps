@@ -1,0 +1,2 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HomeFinder\bin\Debug\HomeFinder.exe.config
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HomeFinder\obj\Debug\HomeFinder.csprojResolveAssemblyReference.cache
