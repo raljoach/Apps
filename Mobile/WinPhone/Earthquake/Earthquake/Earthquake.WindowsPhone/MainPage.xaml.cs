@@ -45,10 +45,10 @@ namespace Earthquake
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
-            fetch();
+            Fetch();
         }
 
-        private async void fetch()
+        private async void Fetch()
         {
             HttpClient client = new HttpClient();
             
@@ -59,7 +59,11 @@ namespace Earthquake
 
             DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(RootObject));
             RootObject feed = (RootObject)ser.ReadObject(response);
-            System.Diagnostics.Debug.WriteLine(feed.earthquakes[0].src + " " + feed.earthquakes[0].magnitude);
+            /*foreach (Earthquake e in feed.earthquakes)
+            {
+                System.Diagnostics.Debug.WriteLine(e.src + " " + e.magnitude + " '" + e.lat + "' '" + e.lng + "'");
+            }*/
+            myListView.DataContext = feed;
 
         }
     }

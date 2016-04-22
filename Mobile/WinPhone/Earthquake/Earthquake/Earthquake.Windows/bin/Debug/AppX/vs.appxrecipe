@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RALPH-MSFT</Machine>
+    <WindowsUser>ralphjoachim</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6ce3c539-852d-46a7-b5b5-09fedff9d65d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>8FA6940FE8A1EE53250525B1029BB0E7C3E074FE7B9ED0A856DBD07AC33D7A07</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6ce3c539-852d-46a7-b5b5-09fedff9d65d_1.0.0.0_neutral__75cr2b68sm664</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6ce3c539-852d-46a7-b5b5-09fedff9d65d_75cr2b68sm664!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6ce3c539-852d-46a7-b5b5-09fedff9d65d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Administrator</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-07T06:35:38.760</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\Earthquake.Windows.exe">
+      <PackagePath>Earthquake.Windows.exe</PackagePath>
+      <Modified>2014-11-07T07:04:13.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T18:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T18:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T18:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T18:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-07T06:35:38.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\Styles\Styles.xbf">
+      <PackagePath>Styles\Styles.xbf</PackagePath>
+      <Modified>2014-11-07T06:35:38.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-11-07T06:43:24.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\Earthquake.Windows.xr.xml">
+      <PackagePath>Earthquake.Windows.xr.xml</PackagePath>
+      <Modified>2014-11-07T06:35:38.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Earthquake\Earthquake\Earthquake.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-07T06:35:38.644</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
