@@ -125,16 +125,66 @@ namespace HomeFinder
                 }              
             }
 
+            var housesToBuy = new List<Listing>();
+            //LOOP: listing in listings
             // Predict then slide
             // Predict tomorrow's price for all listings
             // Now slide history forward: change detection
             //  => anomaly up? z>2 (for currentAvg z-score in baseline distribution?)
             //      => Buyer: buy a house quick today (profit make)!
             //      => Seller: hold my house (will make more money if i sell it tomorrow)!
+            /*housesToBuy.Add(listing);*/
+
             //  => anomaly down? z<-2 (for currentAvg z-score in baseline distribution?)
             //      => Seller: sell my property quick (prevent profit loss)!
             //      => Buyer: wait on buying a house (will be cheaper later, be patient)!
+
             //  => still the same? (-2<=z<2)
+            //END LOOP
+
+            var housesShouldBuy = new List<Listing>();
+            var housesAvoid = new List<int>();
+            for (int j=0; j<housesToBuy.Count; j++)
+            {
+                var h = housesToBuy[j];
+                // Do I like it?
+                var like = LikeIt(h); //uses similarity formula
+                if(like)
+                {
+                    var afford = CanAfford(h);
+                    if(afford)
+                    {
+                        housesShouldBuy.Add(h);
+                    }
+                    else { housesAvoid.Add(j); /*"Reason: Can't afford"*/ }
+                } else { housesAvoid.Add(j); /*"Reason: Will not like (predict)"*/ }
+            }
+
+            //Go for these houses first (make an offer)
+            Listing myHouse = null;
+            foreach(var thisHouse in housesShouldBuy)
+            {
+                var accepted = MakeOffer(thisHouse);
+                if(accepted)
+                {
+                    myHouse = thisHouse;
+                    break;
+                }
+            }
+
+            //Go for these houses next (if the first set of houses, you don't get)
+            for(int j=0; myHouse!=null && j<housesToBuy.Count; j++)
+            {
+                if(housesAvoid.Contains(j)) { continue; }
+                var accepted = MakeOffer(housesToBuy(j));
+                if(accepted)
+                {
+                    myHouse = housesToBuy[j];
+                    break;
+                }
+            }
+
+            //return myHouse;
         }
 
         public enum Role { None, Seller, Buyer }
