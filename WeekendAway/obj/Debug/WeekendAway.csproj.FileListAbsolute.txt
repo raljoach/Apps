@@ -1,0 +1,6 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\bin\Debug\WeekendAway.exe.config
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\obj\Debug\WeekendAway.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\bin\Debug\WeekendAway.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\bin\Debug\WeekendAway.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\obj\Debug\WeekendAway.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\obj\Debug\WeekendAway.pdb
