@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.PhantomJS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,7 +71,7 @@ namespace WeekendAway
             this.start = start;
         }
 
-        public Point(double x, double y) { this.X = x;  this.Y = y;  }
+        public Point(double x, double y) { this.X = x; this.Y = y; }
     }
 
     public class TreeNode<T>
@@ -100,19 +102,19 @@ namespace WeekendAway
             Path found = null;
             foreach (var v in this.Vertices)
             {
-                var paths = mst.DFS(v,numVertices);
-                foreach(var p in paths)
+                var paths = mst.DFS(v, numVertices);
+                foreach (var p in paths)
                 {
                     var cost = p.Cost();
-                    if(min<0 || cost<min)
+                    if (min < 0 || cost < min)
                     {
                         min = cost;
-                        found = p; 
+                        found = p;
                     }
                 }
             }
             return found;
-        }        
+        }
     }
 
     public class Kruskal<T>
@@ -121,20 +123,20 @@ namespace WeekendAway
 
         public static TreeNode<T> MinimumSpanningTree(Graph<T> g)
         {
-            foreach(var v in g.Vertices)
+            foreach (var v in g.Vertices)
             {
                 roots.Add(MakeTreeNode(v));
             }
-            foreach(var e in FindMinEdge(g))
+            foreach (var e in FindMinEdge(g))
             {
                 var found = roots.Find(e.Source);
-                if(found!=null)
+                if (found != null)
                 {
                     found.Add(e);
                 }
                 else { throw new InvalidOperationException(); }
             }
-            if(roots.Count==1)
+            if (roots.Count == 1)
             {
                 return roots[0];
             }
@@ -182,7 +184,33 @@ namespace WeekendAway
         }
     }
 
-    public class Program
+    public class LocationsConfig
+    {
+        public Location[] Locations { get; set; }
+    }
+
+    public class Location
+    {
+        private string hours;
+
+        public Location(string name, string address, string hours)
+        {
+            Name = name;
+            Address = address;
+            this.hours = hours;
+        }
+
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Open { get; set; }
+        public string Close { get; set; }
+        public string Days { get; set; }
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
+        public GeoLocation GeoLocation { get; internal set; }
+    }
+
+    public partial class Program
     {
         static string country = "Hawaii, Oahu";
         static string city = "Honolulu";
@@ -199,19 +227,95 @@ namespace WeekendAway
         static Graph<Point> graph;
         static void Main(string[] args)
         {
+            GetLocations();
             var destinations = new List<Destination>();
             var points = new List<Point>();
-            foreach(var location in locations)
+            foreach (var location in locations)
             {
                 var geoLoc = GetLatLong(location);
                 var dest = destinations.Add(geoLoc);
                 var roads = GetNearbyRoads(dest);
-                foreach(var r in roads)
+                foreach (var r in roads)
                 {
                     graph.Add(r);
                 }
             }
             graph.MinimumSpanningTree(3);
+        }
+
+        private static List<Location> GetLocations()
+        {
+            var result = new List<Location>();
+            foreach (var url in ReadFile("search.txt"))
+            {
+                //Selenium: Navigate to url
+                IWebDriver driver = InitPhantomJS();
+                try
+                {
+                    Debug("Loading url '{0}'...", url);
+                    driver.Navigate().GoToUrl(url);
+
+                    string name, address, hours;
+                    Debug("Looking for Name.....");
+                    var nameElem = driver.FindElement(By.CssSelector("data-dtype=d3bn"));
+                    Debug(name=nameElem.Text);
+                    Debug("");
+
+                    Debug("Looking for Address.....");
+                    var addressElem = driver.FindElement(By.CssSelector("data-dtype=d3adr")); 
+                    var add2 = driver.FindElement(By.CssSelector(":contains('Address')"));
+                    Debug(address=addressElem.Text);
+                    Debug("");
+
+                    Debug("Looking for Hours.....");
+                    var hoursElem = driver.FindElement(By.CssSelector("data-dtype=d3adr"));
+                    var h2 = driver.FindElement(By.CssSelector(":contains('Hours')"));
+                    Debug(hours=hoursElem.Text);
+                    Debug("");
+                                        
+                    var loc = new Location(name, address, hours);
+                    loc.GeoLocation = GetLatLong(address);
+
+                    result.Add(loc);
+
+
+
+                    /*
+                                        Debug("Searching for topics...");
+                                        IWebElement questionsLink = driver.FindElement(By.LinkText("Questions"));
+                                        questionsLink.Click();
+
+                                        var topicsCombo = driver.FindElement(By.Id("topic"));
+                                        var options = topicsCombo.FindElements(By.TagName("option"));
+
+                                        if (options == null || options.Count == 0)
+                                        {
+                                            throw new InvalidOperationException("Error: Unable to find list of topics!");
+                                        }
+
+                                        Debug("Successfully Retrieved topics");
+                                        Console.WriteLine();
+                                        foreach (var o in options)
+                                        {
+                                            careerCupTopics.Add(o.Text);
+                                        }
+                                        */
+                }
+                finally
+                {
+                    driver.Quit();
+                }
+
+                throw new NotImplementedException();
+            }
+            return result;
+        }
+
+        
+
+        private static IEnumerable<string> ReadFile(string fileName)
+        {
+            throw new NotImplementedException();
         }
 
         private static Graph<Point> CreateGraph(List<Point> points)
@@ -239,7 +343,7 @@ namespace WeekendAway
                     roadsHash.Add(newRoad);
                     newRoad.Destinations.Add(dest);
                     roads.Add(newRoad);
-                }                
+                }
             }
             return roads;
         }
@@ -251,6 +355,8 @@ namespace WeekendAway
 
         private static GeoLocation GetLatLong(string location)
         {
+            // API: https://developers.google.com/maps/documentation/geocoding/intro#BYB
+            // Example: http://stackoverflow.com/questions/9562775/how-to-retrieve-the-latitude-and-longitude-of-the-inputed-address-using-google-g
             throw new NotImplementedException();
         }
     }
@@ -260,7 +366,7 @@ namespace WeekendAway
         public static Destination Add(this List<Destination> locations, GeoLocation geoLoc)
         {
             Destination dest;
-            locations.Add(dest=new Destination(geoLoc.Latitude, geoLoc.Latitude));
+            locations.Add(dest = new Destination(geoLoc.Latitude, geoLoc.Latitude));
             return dest;
         }
 
