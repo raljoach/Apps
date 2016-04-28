@@ -26,6 +26,8 @@ namespace WeekendAway
     {
         Node<T> Source { get; }
         Node<T> Destination { get; }
+
+        double Weight { get; }
     }
 
     public class Road : IEdge<GeoLocation>
@@ -47,6 +49,14 @@ namespace WeekendAway
             get
             {
                 return new Node<GeoLocation>(End);
+            }
+        }
+
+        public double Weight
+        {
+            get
+            {
+                return -1;
             }
         }
 
@@ -88,33 +98,351 @@ namespace WeekendAway
         }
     }
 
+    public class Edge<T> : IEdge<T>, IComparable<Edge<T>>
+    {
+        public Edge(Node<T> source, Node<T> dest, double weight)
+        {
+            this.Source = source;
+            this.Destination = dest;
+            this.Weight = weight;
+        }
+
+        public Node<T> Source { get; }
+
+        public Node<T> Destination { get; }
+
+        public double Weight { get; }
+
+        public int CompareTo(Edge<T> other)
+        {
+            return this.Weight.CompareTo(other.Weight);
+            //return Convert.ToInt32(this.Weight).CompareTo(Convert.ToInt32(other.Weight));
+        }
+    }
+
+    public class SearchResult<T>
+    {
+        public double Cost = 0;
+        public HashSet<Edge<T>> Route = new HashSet<Edge<T>>();
+        public void AddEdge(Edge<T> e)
+        {
+            this.Route.Add(e);
+            this.Cost += e.Weight;
+        }
+
+        public void RemoveEdge(Edge<T> e)
+        {
+            this.Route.Remove(e);
+            this.Cost -= e.Weight;
+        }
+    }
+
     public class Graph<T>
     {
-        public List<Node<T>> Vertices = new List<Node<T>>();
+        private Dictionary<T, Node<T>> nodeLookUp = new Dictionary<T, Node<T>>();
+        public List<Node<T>> Vertices
+        {
+            get
+            {
+                var list = new List<Node<T>>();
+                foreach(var v in nodeLookUp.Values)
+                {
+                    list.Add(v);
+                }
+                return list;
+            }
+        }
 
-        public Path MinimumSpanningTree(int numVertices)
+        public int NumVertices { get { return nodeLookUp.Count;  } }
+
+        public int NumEdges { get { return this.Edges.Count; } }
+        public HashSet<Edge<T>> Edges = new HashSet<Edge<T>>();
+
+        public Graph<T> MinimumSpanningTree()
+        {
+            return Kruskal<T>.MinimumSpanningTree(this);
+        }
+
+        public SearchResult<T> MinimumSpanningTree(int numVert)
         {
             var mst = Kruskal<T>.MinimumSpanningTree(this);
-            double min = -1;
-            Path found = null;
-            foreach (var v in this.Vertices)
+            SearchResult<T> minResult = null;
+            foreach (var v in mst.Vertices)
             {
-                var paths = mst.DFS(v, numVertices);
-                foreach (var p in paths)
+
+                SearchResult<T> result = DFS(mst, v, numVert - 1);
+                if (minResult == null || result.Cost < minResult.Cost)
                 {
-                    var cost = p.Cost();
-                    if (min < 0 || cost < min)
-                    {
-                        min = cost;
-                        found = p;
-                    }
+                    minResult = result;
                 }
             }
-            return found;
+            //Console.WriteLine(minResult.Cost);
+            return minResult;
+        }
+
+        public SearchResult<T> DFS(Graph<T> graph, Node<T> v, int edgeCount)
+        {
+            var path = new SearchResult<T>();
+            var bestPath = new SearchResult<T>() { Cost = int.MaxValue };
+            DFS(graph, path, bestPath, v, edgeCount);
+            return bestPath;
+        }
+
+        private static void DFS(Graph<T> graph, SearchResult<T> path, SearchResult<T> bestPath, Node<T> root, int edgeCount)
+        {
+            var neighbors = root.Edges;
+            foreach (var e in neighbors)
+            {
+                if (path.Route.Contains(e)) { continue; }
+                bool edgeAdded = false;
+                if (e.Source != root)
+                {
+                    edgeAdded = true;
+                    path.AddEdge(e);
+                    --edgeCount;
+                    if (edgeCount > 0)
+                    {
+                        DFS(graph, path, bestPath, e.Source, edgeCount);
+                    }
+                }
+                else if (e.Destination != root)
+                {
+                    edgeAdded = true;
+                    path.AddEdge(e);
+                    --edgeCount;
+                    if (edgeCount > 0)
+                    {
+                        DFS(graph, path, bestPath, e.Destination, edgeCount);
+                    }
+                }
+
+                if (edgeCount == 0)
+                {
+                    if (path.Cost < bestPath.Cost)
+                    {
+                        bestPath.Route.Clear();
+                        bestPath.Cost = 0;
+                        foreach (var pe in path.Route)
+                        {
+                            bestPath.AddEdge(pe);
+                        }
+                    }
+                }
+
+                if (edgeAdded)
+                {
+                    path.RemoveEdge(e);
+                    ++edgeCount;
+                }
+            }
+        }
+
+        //public Path Prototype_MinimumSpanningTree(int numVertices)
+        //{
+        //    var mst = Kruskal<T>.MinimumSpanningTree(this);
+        //    double min = -1;
+        //    Path found = null;
+        //    foreach (var v in this.Vertices)
+        //    {
+        //        var paths = mst.DFS(v, numVertices);
+        //        foreach (var p in paths)
+        //        {
+        //            var cost = p.Cost();
+        //            if (min < 0 || cost < min)
+        //            {
+        //                min = cost;
+        //                found = p;
+        //            }
+        //        }
+        //    }
+        //    return found;
+        //}
+
+        public void Add(T source, T dest, double weight)
+        {
+            var sourceNode = LookUp(source);
+            var destNode = LookUp(dest);
+
+            sourceNode.Add(new Edge<T>(sourceNode, destNode, weight));
+            Add(new Edge<T>(sourceNode, destNode, weight), addNodes:false);
+        }
+
+        public void Add(Edge<T> edge, bool addNodes = true)
+        {
+            if (!this.Edges.Contains(edge))
+            {
+                this.Edges.Add(edge);
+            }
+            if(addNodes)
+            {
+                AddToLookup(edge.Source);
+                AddToLookup(edge.Destination);
+            }
+        }
+
+        private void AddToLookup(Node<T> node)
+        {
+            if (!nodeLookUp.ContainsKey(node.Data))           
+            {
+                nodeLookUp.Add(node.Data, node);
+            }
+        }
+
+        private Node<T> LookUp(T source)
+        {
+            Node<T> node;
+            if (nodeLookUp.ContainsKey(source))
+            {
+                node = nodeLookUp[source];
+            }
+            else
+            {
+                nodeLookUp.Add(source, node = new Node<T>(source));
+            }
+
+            return node;
         }
     }
 
     public class Kruskal<T>
+    {
+        public static /*TreeNode<T>*/Graph<T> MinimumSpanningTree(Graph<T> graph)
+        {
+            int numVert = graph.NumVertices;
+            //List<Edge<int>> result = new List<Edge<int>>();
+            Graph<T> resultGraph = new Graph<T>();
+            int i = 0; // iterator for sorted edges
+
+            //Sort edges
+            var edges = new List<Edge<T>>();
+            foreach (var edge in graph.Edges)
+            {
+                edges.Add(edge);
+            }
+            edges.Sort();
+
+            //Create a unique subset for each vertex
+            var subsets = new Dictionary<Node<T>, Subset<Node<T>>>();
+            foreach (var v in graph.Vertices)
+            {
+                subsets.Add(v, new Subset<Node<T>>(v, 0));
+            }
+
+            //while (result.Count < (numVert - 1))
+            while (resultGraph.Edges.Count < (numVert - 1))
+            {
+                //Pick the smallest edge
+                var nextEdge = edges[i++];
+                var x = Find(subsets, nextEdge.Source);
+                var y = Find(subsets, nextEdge.Destination);
+
+                if (x != y)
+                {
+                    //result.Add(nextEdge);
+                    resultGraph.Add(nextEdge);
+                    Union(subsets, x, y);
+                }
+            }
+            //return result;
+            return resultGraph;
+        }
+
+        private static Node<T> Find(Dictionary<Node<T>, Subset<Node<T>>> subsets, Node<T> i)
+        {
+            if (subsets[i].Parent != i)
+                subsets[i].Parent = Find(subsets, subsets[i].Parent);
+
+            return subsets[i].Parent;
+        }
+
+        private static void Union(Dictionary<Node<T>, Subset<Node<T>>> subsets, Node<T> x, Node<T> y)
+        {
+            var xroot = Find(subsets, x);
+            var yroot = Find(subsets, y);
+
+            // Attach smaller rank tree under root of high rank tree
+            // (Union by Rank)
+            if (subsets[xroot].Rank < subsets[yroot].Rank)
+            {
+                subsets[xroot].Parent = yroot;
+            }
+            else if (subsets[xroot].Rank > subsets[yroot].Rank)
+            {
+                subsets[yroot].Parent = xroot;
+            }
+
+            // If ranks are same, then make one as root and increment
+            // its rank by one
+            else
+            {
+                subsets[yroot].Parent = xroot;
+                subsets[xroot].Rank++;
+            }
+        }
+    }
+    public class Subset<T>
+    {
+        public Subset(T parent, int rank) { this.Parent = parent; this.Rank = rank; }
+        public T Parent;
+        public int Rank;
+    }
+
+    /*
+    public class Graph<T>
+    {
+        public int NumVertices { get { return this.Vertices.Count; } }
+        public int NumEdges { get { return this.Edges.Count; } }
+        public HashSet<Edge<T>> Edges = new HashSet<Edge<T>>();
+        public Dictionary<T, List<Edge<T>>> Vertices = new Dictionary<T, List<Edge<T>>>();
+
+        public void AddEdge(Edge<T> edge)
+        {
+            if (!this.Edges.Contains(edge))
+            {
+                this.Edges.Add(edge);
+                AddEdge(edge.Source, edge);
+                AddEdge(edge.Destination, edge);
+            }
+        }
+
+        private void AddEdge(T key, Edge<T> edge)
+        {
+            List<Edge<T>> list;
+            if (!this.Vertices.ContainsKey(key))
+            {
+                list = new List<Edge<T>>();
+                this.Vertices.Add(key, list);
+            }
+            else
+            {
+                list = this.Vertices[key];
+            }
+            list.Add(edge);
+        }
+    }
+
+    
+
+    public class Edge<T> : IComparable<Edge<T>>
+    {
+        public Edge(T v1, T v2, int weight)
+        {
+            this.Source = v1;
+            this.Destination = v2;
+            this.Weight = weight;
+        }
+
+        public T Source;
+        public T Destination;
+        public int Weight;
+
+        public int CompareTo(Edge<T> other)
+        {
+            return Convert.ToInt32(this.Weight).CompareTo(Convert.ToInt32(other.Weight));
+        }
+    }
+    
+    public class Prototype_Kruskal<T>
     {
         private static DisjointSet<TreeNode<T>> roots = new DisjointSet<TreeNode<T>>();
 
@@ -150,7 +478,7 @@ namespace WeekendAway
             throw new NotImplementedException();
         }
     }
-
+    */
     public class DisjointSet<T> : List<T>
     {
         public void Union() { }
@@ -168,16 +496,18 @@ namespace WeekendAway
     {
         public T Data;
         public List<Node<T>> Neighbors = new List<Node<T>>();
+        public List<Edge<T>> Edges = new List<Edge<T>>();
 
         public Node(T data)
         {
             this.Data = data;
         }
 
-        public void Add(IEdge<T> e)
+        public void Add(Edge<T> e)
         {
             if (e.Source != this) { throw new InvalidOperationException("Error: Add edge failed. Source doesn't match this node!"); }
             this.Neighbors.Add(e.Destination);
+            this.Edges.Add(e);
         }
     }
 

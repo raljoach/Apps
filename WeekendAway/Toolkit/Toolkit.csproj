@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMapToolkit.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="MapToolkit.cs" />
     <Compile Include="Program.cs" />

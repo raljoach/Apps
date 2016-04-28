@@ -19,7 +19,8 @@ namespace Toolkit
     {
         public static void Main(string[] args)
         {
-            List<Place> places = Search();// FindPlaces();
+            List<Place> places = Search();
+            places.AddRange(FindPlaces(places.Count));
             Debug("Total: {0}", places.Count);
             var visit = new Visit(places);
             var json = JsonConvert.SerializeObject(visit);
@@ -92,6 +93,44 @@ namespace Toolkit
             return places;
         }
 
+        private static List<Place> FindPlaces(int count=0)
+        {
+            var places = new List<Place>();
+            var file = "urls.txt";
+            var driver = new ChromeDriver(); //InitPhantomJS();
+            try
+            {
+                //var count = 0;
+                foreach (var url in ReadFrom(file))
+                {
+                    ++count;
+                    try
+                    {
+                        Place p = GetPlace(driver, url, count);
+                        places.Add(p);
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug();
+                        Debug("Error: Unable to process url #{0}\r\nUrl:{1}\r\n{2}", count, url, ex.ToString());
+                        Debug();
+                        //Debug("Hit Enter to continue...");
+                        //Console.ReadKey();
+                        //Debug();
+                    }
+                    finally
+                    {
+                        Logger.Border();
+                    }
+                }
+            }
+            finally
+            {
+                driver.Quit();
+            }
+            return places;
+        }
+
         private static Place Lookup(IWebDriver driver, Suggestion suggestion,int placeId)
         {
             var p = suggestion.Place;
@@ -142,45 +181,7 @@ namespace Toolkit
             //}
             
             return suggestions;
-        }
-
-        private static List<Place> FindPlaces()
-        {
-            var places = new List<Place>();
-            var file = "urls.txt";
-            var driver = new ChromeDriver(); //InitPhantomJS();
-            try
-            {
-                var count = 0;
-                foreach (var url in ReadFrom(file))
-                {
-                    ++count;
-                    try
-                    {
-                        Place p = GetPlace(driver, url, count);
-                        places.Add(p);
-                    }
-                    catch (Exception ex)
-                    {
-                        Debug();
-                        Debug("Error: Unable to process url #{0}\r\nUrl:{1}\r\n{2}", count, url, ex.ToString());
-                        Debug();
-                        //Debug("Hit Enter to continue...");
-                        //Console.ReadKey();
-                        //Debug();
-                    }
-                    finally
-                    {
-                        Logger.Border();
-                    }
-                }
-            }
-            finally
-            {
-                driver.Quit();
-            }
-            return places;
-        }
+        }        
 
         private static Place GetPlace(ChromeDriver driver, string url, int count)
         {

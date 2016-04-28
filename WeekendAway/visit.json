@@ -998,6 +998,31 @@
         "Longitude": -157.8144957
       },
       "Url": "https://www.google.com/search?q=Haiku+Stairs&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLHMyrMzCh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQAzBW6chgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IqAE"
+    },
+    {
+      "Hours": {
+
+      },
+      "Id": 49,
+      "Name": "Kailua Beach Park",
+      "Description": null,
+      "Address": "526 Kawailoa Rd, Kailua, HI 96734",
+      "Open": null,
+      "Close": null,
+      "Days": null,
+      "GeoLocation": {
+        "Latitude": 21.3940888,
+        "Longitude": -157.7231477,
+        "Address": "526 Kawailoa Rd, Kailua, HI 96734, USA"
+      },
+      "Url": null,
+      "DistanceText": null,
+      "DurationText": null,
+      "DistanceValue": 0.0,
+      "DurationValue": 0.0,
+      "DistanceRank": 0,
+      "DurationRank": 0,
+      "SearchOrder": 0
     }
   ]
 }
