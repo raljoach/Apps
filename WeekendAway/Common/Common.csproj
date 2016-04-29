@@ -50,6 +50,7 @@
     <Compile Include="PhantomJSExt.cs" />
     <Compile Include="Place.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Visit.cs" />
   </ItemGroup>

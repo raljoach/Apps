@@ -5,6 +5,7 @@ namespace Toolkit
 {
     public interface IMapToolkit
     {
-        DistanceResult DistanceMatrix(Place start, List<Place> others);
+        ToolkitType ToolkitType { get; }
+        DistanceResult DistanceMatrix(Place start, List<Place> destinations);
     }
 }

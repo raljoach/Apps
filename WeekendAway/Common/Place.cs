@@ -20,6 +20,7 @@ namespace Common
             this.DistanceValue = double.MaxValue;
             this.DurationValue = double.MaxValue;
         }
+        public bool Preferred { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

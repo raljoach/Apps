@@ -65,21 +65,7 @@ namespace WeekendAway
             Start = start;
             End = end;
         }
-    }
-
-    public class Point
-    {
-        public double X;
-        public double Y;
-        private GeoLocation start;
-
-        public Point(GeoLocation start)
-        {
-            this.start = start;
-        }
-
-        public Point(double x, double y) { this.X = x; this.Y = y; }
-    }
+    }    
 
     public class TreeNode<T>
     {
@@ -124,10 +110,16 @@ namespace WeekendAway
     {
         public double Cost = 0;
         public HashSet<Edge<T>> Route = new HashSet<Edge<T>>();
+        public HashSet<Node<T>> Visited = new HashSet<Node<T>>();
+
+        public int PathId { get; internal set; }
+
         public void AddEdge(Edge<T> e)
         {
             this.Route.Add(e);
             this.Cost += e.Weight;
+            this.Visited.Add(e.Source);
+            this.Visited.Add(e.Destination);
         }
 
         public void RemoveEdge(Edge<T> e)
@@ -140,6 +132,7 @@ namespace WeekendAway
     public class Graph<T>
     {
         private Dictionary<T, Node<T>> nodeLookUp = new Dictionary<T, Node<T>>();
+        private Dictionary<int, Node<T>> idLookup = new Dictionary<int, Node<T>>();
         public List<Node<T>> Vertices
         {
             get
@@ -163,14 +156,14 @@ namespace WeekendAway
             return Kruskal<T>.MinimumSpanningTree(this);
         }
 
-        public SearchResult<T> MinimumSpanningTree(int numVert)
+        public SearchResult<T> MinimumSpanningTree(int visitCount)
         {
             var mst = Kruskal<T>.MinimumSpanningTree(this);
             SearchResult<T> minResult = null;
             foreach (var v in mst.Vertices)
             {
 
-                SearchResult<T> result = DFS(mst, v, numVert - 1);
+                SearchResult<T> result = DFS(mst, v, visitCount - 1);
                 if (minResult == null || result.Cost < minResult.Cost)
                 {
                     minResult = result;
@@ -180,23 +173,25 @@ namespace WeekendAway
             return minResult;
         }
 
-        public SearchResult<T> DFS(Graph<T> graph, Node<T> v, int edgeCount)
+        public SearchResult<T> DFS(Graph<T> graph, Node<T> v, int visitCount)
         {
             var path = new SearchResult<T>();
             var bestPath = new SearchResult<T>() { Cost = int.MaxValue };
-            DFS(graph, path, bestPath, v, edgeCount);
+            DFS(graph, path, bestPath, v, visitCount);
             return bestPath;
         }
 
-        private static void DFS(Graph<T> graph, SearchResult<T> path, SearchResult<T> bestPath, Node<T> root, int edgeCount)
+        private static void DFS(Graph<T> graph, SearchResult<T> path, SearchResult<T> bestPath, Node<T> root, int visitCount)
         {
             var neighbors = root.Edges;
             foreach (var e in neighbors)
             {
-                if (path.Route.Contains(e)) { continue; }
+                //if (path.Route.Contains(e)) { continue; }
                 bool edgeAdded = false;
                 if (e.Source != root)
                 {
+                    throw new InvalidOperationException("Error: We have a neighbor edge, whose source is not equal to the current node!");
+                    /*
                     edgeAdded = true;
                     path.AddEdge(e);
                     --edgeCount;
@@ -204,21 +199,30 @@ namespace WeekendAway
                     {
                         DFS(graph, path, bestPath, e.Source, edgeCount);
                     }
+                    */
                 }
-                else if (e.Destination != root)
+                else if (e.Destination != root) // Let's look at the destination as long as it's not pointing back to itself
                 {
                     edgeAdded = true;
+                    var visitedBefore = path.Visited.Contains(e.Destination);
+                    if(visitedBefore) {
+                        continue;
+                    }
                     path.AddEdge(e);
-                    --edgeCount;
-                    if (edgeCount > 0)
+                    if (!visitedBefore) // Only count the unique places we visit
                     {
-                        DFS(graph, path, bestPath, e.Destination, edgeCount);
+                        --visitCount;
+                    }
+                    if (visitCount > 0)
+                    {
+                        DFS(graph, path, bestPath, e.Destination, visitCount);
                     }
                 }
 
-                if (edgeCount == 0)
+                // OK, so we've visited all the places we wanted to, in terms of count
+                if (visitCount == 0)
                 {
-                    if (path.Cost < bestPath.Cost)
+                    if (path.Cost < bestPath.Cost) // Is this path the best path in terms of cost?
                     {
                         bestPath.Route.Clear();
                         bestPath.Cost = 0;
@@ -229,10 +233,12 @@ namespace WeekendAway
                     }
                 }
 
+                // So we tried the path thru our neighbor
+                // Let's undo it before we go onto the next neighbor (Backtrack)
                 if (edgeAdded)
                 {
                     path.RemoveEdge(e);
-                    ++edgeCount;
+                    ++visitCount;
                 }
             }
         }
@@ -260,8 +266,8 @@ namespace WeekendAway
 
         public void Add(T source, T dest, double weight)
         {
-            var sourceNode = LookUp(source);
-            var destNode = LookUp(dest);
+            var sourceNode = FindAdd(source);
+            var destNode = FindAdd(dest);
 
             sourceNode.Add(new Edge<T>(sourceNode, destNode, weight));
             Add(new Edge<T>(sourceNode, destNode, weight), addNodes:false);
@@ -288,19 +294,38 @@ namespace WeekendAway
             }
         }
 
-        private Node<T> LookUp(T source)
+        private Node<T> FindAdd(T source)
         {
-            Node<T> node;
-            if (nodeLookUp.ContainsKey(source))
-            {
-                node = nodeLookUp[source];
-            }
-            else
+            Node<T> node = Find(source);
+            if (node==null)
             {
                 nodeLookUp.Add(source, node = new Node<T>(source));
             }
 
             return node;
+        }
+
+        public Node<T> Find(T source)
+        {
+            if (nodeLookUp.ContainsKey(source))
+            {
+                return nodeLookUp[source];
+            }
+            return null;
+        }
+
+        public Node<T> Find(int id)
+        {
+            if (idLookup.ContainsKey(id))
+            {
+                return idLookup[id];
+            }
+            return null;
+        }
+
+        public void AddLookupId(int id, Node<T> node)
+        {
+            idLookup.Add(id, node);
         }
     }
 

@@ -32,7 +32,12 @@ namespace Common
 
         public static void Border()
         {
-            Debug("".PadLeft(Console.WindowWidth, '-'));
+            Border('-');
+        }
+
+        public static void Border(char ch)
+        {
+            Debug("".PadLeft(Console.WindowWidth, ch));
         }
     }
 }
