@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="FileIO.cs" />
     <Compile Include="GeoLocation.cs" />
+    <Compile Include="IItem.cs" />
     <Compile Include="PhantomJSExt.cs" />
     <Compile Include="Place.cs" />
     <Compile Include="Logger.cs" />

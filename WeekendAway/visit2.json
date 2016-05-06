@@ -31,33 +31,6 @@
       "Url": "https://www.google.com/search?q=Diamond+Head&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMciqrLB8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQCQgdgVhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IGw"
     },
     {
-      "Hours": {
-        "Sunday": "7AM–5PM",
-        "Monday": "7AM–5PM",
-        "Tuesday": "7AM–5PM",
-        "Wednesday": "7AM–5PM",
-        "Thursday": "7AM–5PM",
-        "Friday": "7AM–5PM",
-        "Saturday": "7AM–5PM"
-      },
-      "Preferred": true,
-      "Visited": true,
-      "Id": 2,
-      "Name": "USS Arizona Memorial",
-      "Description": "Pearl Harbor & USS Arizona memorial",
-      "Address": "1 Arizona Memorial Pl, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.367536,
-        "Longitude": -157.9385953
-      },
-      "Url": "https://www.google.com/search?q=USS+Arizona+Memorial&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMTUxzqh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQD2COWNhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IHg"
-    }, /*Duplicate of ID:2
-    {
       "Hours": null,
       "Id": 3,
       "Name": "Duke Kahanamoku Statue",
@@ -68,9 +41,13 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.275737,
+        "Longitude": -157.8252769,
+
+      },
       "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=duke+kahanamoku+statue+address"
-    },*/
+    },
     {
       "Hours": {
         "Sunday": "Closed",
@@ -109,7 +86,10 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.2690,
+        "Longitude": -157.6938
+      },
       "Url": "https://www.google.com/search?q=Hanauma+Bay&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMU9Lyqh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQAO-RSbhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IJw"
     },
     {
@@ -137,33 +117,6 @@
         "Longitude": -157.8587339
       },
       "Url": "https://www.google.com/search?q=%CA%BBIolani+Palace&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMUiyzTR4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQDgnuCRhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IKg"
-    },
-    {
-      "Hours": {
-        "Sunday": "8AM–4:30PM",
-        "Monday": "8AM–4:30PM",
-        "Tuesday": "8AM–4:30PM",
-        "Wednesday": "8AM–4:30PM",
-        "Thursday": "8AM–4:30PM",
-        "Friday": "8AM–4:30PM",
-        "Saturday": "8AM–4:30PM"
-      },
-      "Visited": true,
-      "Preferred": true,
-      "Id": 7,
-      "Name": "National Memorial Cemetery of the Pacific",
-      "Description": "Historic military gravesite with views",
-      "Address": "2177 Puowaina Dr, Honolulu, HI 96813",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3126935,
-        "Longitude": -157.8427344
-      },
-      "Url": "https://www.google.com/search?q=National+Memorial+Cemetery+of+the+Pacific&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMcgwrDB8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBjSSTrhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4ILQ"
     },
     {
       "Hours": {
@@ -219,54 +172,6 @@
     },
     {
       "Hours": {
-        "Sunday": "7AM–5PM",
-        "Monday": "7AM–5PM",
-        "Tuesday": "7AM–5PM",
-        "Wednesday": "7AM–5PM",
-        "Thursday": "7AM–5PM",
-        "Friday": "7AM–5PM",
-        "Saturday": "7AM–5PM"
-      },
-      "Preferred": true,
-      "Visited": true,
-      "Id": 10,
-      "Name": "USS Bowfin",
-      "Description": "Historic WWII submarine with exhibits",
-      "Address": "11 Arizona Memorial Dr, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3687468,
-        "Longitude": -157.9394006
-      },
-      "Url": "https://www.google.com/search?q=USS+Bowfin&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMzMsKjB4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBDsSW0hgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4INg"
-    },
-    {
-      "Hours": {
-
-      },
-      "Visited": true,
-      "Preferred": true,
-      "Id": 11,
-      "Name": "Manoa Falls",
-      "Description": "Hiking, waterfall",
-      "Address": "37 Manoa Rd, Honolulu, HI 96822",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3153334,
-        "Longitude": -157.8120624
-      },
-      "Url": "https://www.google.com/search?q=Manoa+Falls&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGMzPKSUwweMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kAjvM9J4cAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IOQ"
-    },
-    {
-      "Hours": {
         "Sunday": "9:30AM–5PM",
         "Monday": "9:30AM–5PM",
         "Tuesday": "9:30AM–5PM",
@@ -293,32 +198,6 @@
     },
     {
       "Hours": {
-        "Sunday": "8AM–4PM",
-        "Monday": "8AM–4PM",
-        "Tuesday": "8AM–4PM",
-        "Wednesday": "8AM–4PM",
-        "Thursday": "8AM–4PM",
-        "Friday": "8AM–4PM",
-        "Saturday": "8AM–4PM"
-      },
-      "Id": 13,
-      "Visited": true,
-      "Name": "USS Missouri (BB-63)",
-      "Description": "Living memorial to historic WWII moment",
-      "Address": "63 Cowpens St, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3620445,
-        "Longitude": -157.9535082
-      },
-      "Url": "https://www.google.com/search?q=USS+Missouri&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlMCs3INss0fMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTg5mgwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kAGtNjvoUAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IPw"
-    },
-    {
-      "Hours": {
 
       },
       "Visited": true,
@@ -336,37 +215,12 @@
         "Longitude": -157.8367115
       },
       "Url": "https://www.google.com/search?q=Hilton+Hawaiian+Village&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMk3OL0x8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQCwZ8lIhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IQg"
-    },/*
-    {
-      "Hours": {
-        "Sunday": "6:30AM–7PM",
-        "Monday": "6:30AM–7PM",
-        "Tuesday": "6:30AM–7PM",
-        "Wednesday": "6:30AM–7PM",
-        "Thursday": "6:30AM–7PM",
-        "Friday": "6:30AM–7PM",
-        "Saturday": "6:30AM–7PM"
-      },
-      "Id": 15,
-      "Name": "Ko Olina Resort",
-      "Description": "Golf, honeymoon",
-      "Address": "92-1220 Ali'inui Dr, Kapolei, HI 96707",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3396875,
-        "Longitude": -158.1195013
-      },
-      "Url": "https://www.google.com/search?q=Ko+Olina+Golf+Club&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGSzLJz8koeMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kA5t-8s4cAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IRQ"
-    },*/
+    },
     {
       "Hours": null,
       "Preferred": true,
       "Id": 16,
-      "Name": "Nu‘uanu Pali",
+      "Name": "Nu‘uanu Pali Lookout",
       "Description": "Reservoir, hiking, park, waterfall",
       "Address": "Nuuanu Pali Drive, Kaneohe, HI 96744",
       "Open": null,
@@ -374,7 +228,10 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.3670,
+        "Longitude": -157.7931
+      },
       "Url": "https://www.google.com/search?q=Nuuanu+Pali&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLFMcgpSsh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBu-3IUhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4ISA"
     },
     {
@@ -447,54 +304,6 @@
       "Url": "https://www.google.com/search?q=Wet%27n%27Wild+Hawaii&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLEsi9MLkh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQAx5CbghgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IUQ"
     },
     {
-      "Hours": {
-        "Sunday": "8AM–5PM",
-        "Monday": "8AM–5PM",
-        "Tuesday": "8AM–5PM",
-        "Wednesday": "8AM–5PM",
-        "Thursday": "8AM–5PM",
-        "Friday": "8AM–5PM",
-        "Saturday": "8AM–5PM"
-      },
-      "Visited": true,
-      "Preferred": true,
-      "Id": 20,
-      "Name": "Pacific Aviation Museum Pearl Harbor",
-      "Description": "Exhibits on WWII aviation in the Pacific",
-      "Address": "319 Lexington Blvd, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3597642,
-        "Longitude": -157.9618226
-      },
-      "Url": "https://www.google.com/search?q=Pacific+Aviation+Museum+Pearl+Harbor&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGMzA3LLNIeMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kAabZhjocAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IVA"
-    },
-    {
-      "Hours": {
-
-      },
-      "Visited": true,
-      "Preferred": true,
-      "Id": 21,
-      "Name": "Byodo-In Temple",
-      "Description": "Temple",
-      "Address": "47-200 Kahekili Hwy, Kaneohe, HI 96744",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.4347495,
-        "Longitude": -157.8278556
-      },
-      "Url": "https://www.google.com/search?q=Byodo-In+Temple&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMTQwsKh8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBpOfMfhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IVw"
-    },
-    {
       "Hours": null,
       "Id": 22,
       "Name": "Koʻolau Range",
@@ -505,49 +314,12 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.4500,
+        "Longitude": -57.9000
+      },
       "Url": "https://www.google.com/search?q=Ko%CA%BBolau+Range&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMy8uLcx8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQAyYJx1hgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IWg"
     },
-    {
-      "Hours": {
-        "Sunday": "8AM–9PM",
-        "Monday": "8AM–9PM",
-        "Tuesday": "8AM–9PM",
-        "Wednesday": "8AM–9PM",
-        "Thursday": "8AM–9PM",
-        "Friday": "8AM–9PM",
-        "Saturday": "8AM–9PM"
-      },
-      "Visited": true,
-      "Id": 23,
-      "Name": "Ala Moana Beach Park",
-      "Description": "White-sand beach, green space & picnics",
-      "Address": "1201 Ala Moana Blvd, Honolulu, HI 96814",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.2905569,
-        "Longitude": -157.8504586
-      },
-      "Url": "https://www.google.com/search?q=Ala+Moana+Beach+Park&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGMCoyNTPMeMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kArUh49ocAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IXQ"
-    }, /* DUP: ID:17
-    {
-      "Hours": null,
-      "Id": 24,
-      "Name": "Makapuʻu",
-      "Description": "Beach, surfing, hiking",
-      "Address": null,
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": null,
-      "Url": "https://www.google.com/search?q=Makapu%CA%BBu&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLEMi6pMDR4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQC9WPKuhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IYA"
-    },*/
     {
       "Hours": {
 
@@ -587,65 +359,6 @@
       "Url": "https://www.google.com/search?q=Honolulu+Museum+of+Art&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLHMLYwrTR4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQA8Q2tyhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IZg"
     },
     {
-      "Hours": {
-        "Sunday": "10AM–10PM",
-        "Monday": "10AM–10PM",
-        "Tuesday": "10AM–10PM",
-        "Wednesday": "10AM–10PM",
-        "Thursday": "10AM–10PM",
-        "Friday": "10AM–10PM",
-        "Saturday": "10AM–10PM"
-      },
-      "Visited": true,
-      "Id": 27,
-      "Name": "Royal Hawaiian Center",
-      "Description": "Seller of fine jewelry & luxury watches",
-      "Address": "2201 Kalakaua Ave, Honolulu, HI 96815",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.2794591,
-        "Longitude": -157.8300273
-      },
-      "Url": "https://www.google.com/search?q=Royal+Hawaiian+Center&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArEsDExTqswfMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kA_Mp0rIcAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IaQ"
-    },
-    {
-      "Hours": null,
-      "Id": 28,
-      "Name": "Na Mokulua",
-      "Description": "Kayaking",
-      "Address": null,
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": null,
-      "Url": "https://www.google.com/search?q=Na+Mokulua&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLHMTCpN0x8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBEFCyShgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IbA"
-    },/* NOT INTERESTED
-    {
-      "Hours": {
-
-      },
-      "Id": 29,
-      "Name": "Aulani, A Disney Resort & Spa",
-      "Description": "Beachfront spot with family activities",
-      "Address": "92-1185 Ali'inui Dr, Kapolei, HI 96707",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3387526,
-        "Longitude": -158.1233379
-      },
-      "Url": "https://www.google.com/search?q=Aulani&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArEsy4xNi0wfMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kAiVwMSYcAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4Ibw"
-    },*/
-    {
       "Hours": null,
       "Id": 30,
       "Name": "Hawaii State Capitol",
@@ -656,7 +369,10 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.3072,
+        "Longitude": -157.8574
+      },
       "Url": "https://www.google.com/search?q=Hawaii+State+Capitol&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMciwqMh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQA2usbXhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4Icg"
     },
     {
@@ -708,7 +424,10 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.2776,
+        "Longitude": -157.6960
+      },
       "Url": "https://www.google.com/search?q=Koko+Head&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLFMy8xNMh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQANddS8hgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4Iew"
     },
     {
@@ -747,7 +466,10 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
+      "GeoLocation": {
+        "Latitude": 21.2822,
+        "Longitude": -157.6767
+      },
       "Url": "https://www.google.com/search?q=H%C4%81lona+Blowhole&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGMzAziLXMeMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kA6Sk5tYcAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IgQE"
     },
     {
@@ -793,32 +515,7 @@
         "Longitude": -157.8015511
       },
       "Url": "https://www.google.com/search?q=Lyon+Arboretum&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLFMi0tMTB4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQBekosDhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IhwE"
-    },/* NOT INTERESTED
-    {
-      "Hours": {
-        "Sunday": "Closed",
-        "Monday": "Closed",
-        "Tuesday": "Closed",
-        "Wednesday": "Closed",
-        "Thursday": "Closed",
-        "Friday": "Closed",
-        "Saturday": "Closed"
-      },
-      "Id": 38,
-      "Name": "Aloha Stadium",
-      "Description": "Hawaii's largest outdoor arena",
-      "Address": "99-500 Salt Lake Blvd, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.3464529,
-        "Longitude": -157.9196777
-      },
-      "Url": "https://www.google.com/search?q=Aloha+Stadium&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLEM440ykh8x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQDDkAH3hgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IigE"
-    },*/
+    },
     {
       "Hours": {
         "Sunday": "Closed",
@@ -906,32 +603,7 @@
         "Longitude": -157.8328119
       },
       "Url": "https://www.google.com/search?q=The+Contemporary+Museum,+Honolulu&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArGMiioNMoweMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kA900ojocAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IlgE"
-    },/* NOT INTERESTED
-    {
-      "Hours": {
-        "Sunday": "Closed",
-        "Monday": "Closed",
-        "Tuesday": "Closed",
-        "Wednesday": "Closed",
-        "Thursday": "Closed",
-        "Friday": "Closed",
-        "Saturday": "Closed"
-      },
-      "Id": 43,
-      "Name": "U.S. Army Museum of Hawaii",
-      "Description": "Museum",
-      "Address": "2161 Kalia Rd, Honolulu, HI 96815",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.2783355,
-        "Longitude": -157.8331553
-      },
-      "Url": "https://www.google.com/search?q=U.S.+Army+Museum+of+Hawaii&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiArEsywzTyqseMeZwC7z8cU9YKnnSmpPXGGO5BEOKEstScwLyM10rCnIykzNLhDy4OHzykxNLMvPzhKS4eKTgJmkwSHFxwXlSCkpcvM2Bx3lET0tdXqglxMmcXXTbKI2hRvDw6fwJmbURN3kAEU0BkIcAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4ImQE"
-    },*/
+    },
     {
       "Hours": null,
       "Id": 44,
@@ -943,93 +615,11 @@
       "Days": null,
       "Latitude": null,
       "Longitude": null,
-      "GeoLocation": null,
-      "Url": "https://www.google.com/search?q=Tantalus+(Oahu)&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLGMK3LTDR4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQACW3XshgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4InAE"
-    },/* NOT INTERESTED
-    {
-      "Hours": {
-
-      },
-      "Id": 45,
-      "Name": "Waikiki Shell",
-      "Description": "Open-air venue for concerts & events",
-      "Address": "2805 Monsarrat Ave, Honolulu, HI 96815",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
       "GeoLocation": {
-        "Latitude": 21.2684851,
-        "Longitude": -157.8181112
+        "Latitude": 21.3358,
+        "Longitude": -157.8181
       },
-      "Url": "https://www.google.com/search?q=Waikiki+Shell&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLMKk5MrHzHmcAu8_HFPWCp50pqT1xhjuQRDihLLUnMC8jNdKwpyMpMzS4Q8uDh88pMTSzLz84SkuHik4AZpMEhxccF5UgpKXLzNgcd5RE9LXV6oJcTJnF102yiNoUbw8On8CZm1ETd5ABldMyGGAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4InwE"
-    },*/
-    /* Duplicate of ID:2
-    {
-      "Hours": {
-        "Sunday": "7:30AM–1PM",
-        "Monday": "7:30AM–1PM",
-        "Tuesday": "7:30AM–1PM",
-        "Wednesday": "7:30AM–1PM",
-        "Thursday": "7:30AM–1PM",
-        "Friday": "7:30AM–1PM",
-        "Saturday": "7:30AM–1PM"
-      },
-      "Id": 46,
-      "Name": "USS Arizona",
-      "Description": "Iconic shrine to sunken ship's crew",
-      "Address": "1 Arizona Memorial Pl, Honolulu, HI 96818",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.367536,
-        "Longitude": -157.9385953
-      },
-      "Url": "https://www.google.com/search?q=USS+Arizona&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLEMLYuMjR4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQB_HV4nhgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IogE"
-    },*/
-    /* NOT INTERESTED
-    {
-      "Hours": {
-
-      },
-      "Id": 47,
-      "Name": "The Kahala Hotel & Resort",
-      "Description": "Honeymoon",
-      "Address": "5000 Kahala Ave, Honolulu, HI 96816",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.271847,
-        "Longitude": -157.773651
-      },
-      "Url": "https://www.google.com/search?q=Kahala+Hotel+%26+Resort&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBrEMDdKyiy3KHzHmcAu8_HFPWCp50pqT1xhjuQRDihLLUnMC8jNdKwpyMpMzS4Q8uDh88pMTSzLz84SkuHik4EZpMEhxccF5UgpKXLzNgcd5RE9LXV6oJcTJnF102yiNoUbw8On8CZm1ETd5ABIqnxaIAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IpQE"
-    },*/
-    {
-      "Hours": {
-
-      },
-      "Visited": true,
-      "Id": 48,
-      "Name": "Haiku Stairs",
-      "Description": "Hiking, outdoor recreation",
-      "Address": "John A. Burns Fwy, Kaneohe, HI 96744",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": {
-        "Latitude": 21.4014117,
-        "Longitude": -157.8144957
-      },
-      "Url": "https://www.google.com/search?q=Haiku+Stairs&stick=H4sIAAAAAAAAAONgFuLQz9U3SElLzlPiBLHMyrMzCh4x5nALvPxxT1gqedKak9cYY7kEQ4oSy1JzAvIzXSsKcjKTM0uEPLg4fPKTE0sy8_OEpLh4pOAGaTBIcXHBeVIKSly8zYHHeURPS11eqCXEyZxddNsojaFG8PDp_AmZtRE3eQAzBW6chgAAAA&sa=X&ved=0ahUKEwj9hZuEzKjMAhWMtYMKHZ1oCcIQri4IqAE"
+      "Url": "https://www.google.com/search?q=Makapuu+Point+Light+address&oq=Makapuu+Point+Light+address&aqs=chrome..69i57.2217j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=Tantalus+mountain+longitude+latitude"
     },
     {
       "Hours": {
@@ -1055,20 +645,6 @@
       "DistanceRank": 0,
       "DurationRank": 0,
       "SearchOrder": 0
-    },
-    {
-      "Hours": null,
-      "Id": 50,
-      "Name": "Duke Kahanamoku Statue",
-      "Description": "",
-      "Address": "Kalakaua Ave, Honolulu, HI 96815",
-      "Open": null,
-      "Close": null,
-      "Days": null,
-      "Latitude": null,
-      "Longitude": null,
-      "GeoLocation": null,
-      "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=duke+kahanamoku+statue+address"
     },
     {
       "Hours": null,
@@ -1106,58 +682,89 @@
     },
     {
       "Hours": null,
-      "Visited": true,
       "Id": 53,
-      "Name": "Kahe Point Beach Park",
-      "Description": "electric dolphin beach",
-      "Address": "92-301 Farrington Hwy, Kapolei, HI 96707",
+      "Name": "Kualoa Ranch",
+      "Description": "",
+      "Address": "49-560 Kamehameha Hwy, Kaneohe, HI 96744",
       "Open": null,
       "Close": null,
       "Days": null,
       "Latitude": null,
       "Longitude": null,
       "GeoLocation": {
-        "Latitude": 21.3541667,
-        "Longitude": -158.1305556
+        "Latitude": 21.5207,
+        "Longitude": -157.8373
       },
       "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=ali%27iolani+hale"
     },
     {
       "Hours": null,
-      "Visited": true,
       "Id": 54,
-      "Name": "Sunset at Nanakuli",
+      "Name": "Laie Hawaii Temple",
       "Description": "",
-      "Address": "",
+      "Address": "55-600 Naniloa Loop, Laie, HI 96762",
       "Open": null,
       "Close": null,
       "Days": null,
       "Latitude": null,
       "Longitude": null,
       "GeoLocation": {
-        "Latitude": 21.3541667,
-        "Longitude": -158.1305556
+        "Latitude": 21.6472657,
+        "Longitude": -157.9306928
       },
-      "Url": "Google search"
+      "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=ali%27iolani+hale"
     },
     {
       "Hours": null,
-      "Visited": true,
       "Id": 55,
-      "Name": "Sunset at Maili Beach",
+      "Name": "Dole Plantation",
       "Description": "",
-      "Address": "",
+      "Address": "64-1550 Kamehameha Hwy, Wahiawa, HI 96786",
       "Open": null,
       "Close": null,
       "Days": null,
       "Latitude": null,
       "Longitude": null,
       "GeoLocation": {
-        "Latitude": 21.3541667,
-        "Longitude": -158.1305556
-      },
-      "Url": "Google search"
-    }
+        "Latitude": 21.5260517,
+        "Longitude": -158.0376481,
 
+      },
+      "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=ali%27iolani+hale"
+    },
+    {
+      "Hours": null,
+      "Id": 56,
+      "Name": "KAHALA ESTATES ON THE AVENUE",
+      "Description": "",
+      "Address": "4834 Kahala Avenue, Honolulu, HI 96816",
+      "Open": null,
+      "Close": null,
+      "Days": null,
+      "Latitude": null,
+      "Longitude": null,
+      "GeoLocation": {
+        "Latitude": 21.26915,
+        "Longitude": -157.779463
+      },
+      "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=ali%27iolani+hale"
+    },
+    {
+      "Hours": null,
+      "Id": 57,
+      "Name": "Waimanalo Town",
+      "Description": "",
+      "Address": "Waimanalo, HI 96795",
+      "Open": null,
+      "Close": null,
+      "Days": null,
+      "Latitude": null,
+      "Longitude": null,
+      "GeoLocation": {
+        "Latitude": 21.3461,
+        "Longitude": -157.7219
+      },
+      "Url": "https://www.google.com/search?q=Kilauea&oq=Kilauea&aqs=chrome..69i57j0l5.467j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#q=ali%27iolani+hale"
+    }
   ]
 }

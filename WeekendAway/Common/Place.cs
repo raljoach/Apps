@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public class Place
+    public class Place : IItem
     {
         public Dictionary<string, string> Hours { get; set; }
         public Place() { }
@@ -20,6 +20,7 @@ namespace Common
             this.DistanceValue = double.MaxValue;
             this.DurationValue = double.MaxValue;
         }
+        public bool Visited { get; set; }
         public bool Preferred { get; set; }
         public int Id { get; set; }
         public string Name { get; set; }
@@ -37,5 +38,12 @@ namespace Common
         public int DistanceRank { get; set; }
         public int DurationRank { get; set; }
         public int OriginId { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Place;
+            if (other == null) return false;
+            return this.Id == other.Id /*|| this.Name == other.Name*/;
+        }
     }
 }

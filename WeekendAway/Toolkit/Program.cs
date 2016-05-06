@@ -213,27 +213,14 @@ namespace Toolkit
             Debug("Finding Hours of location....");
             var hours = GetHours(driver);
             Debug(hours);
-            GeocodingRequest request = new GeocodingRequest();
-            request.Address = address;
-            request.Sensor = false;
-            GeocodingService svc = new GeocodingService();
-            var response = svc.GetResponse(request);
-            var result = response.Results.First();
-
-            var longitude = result.Geometry.Location.Longitude;
-            var latitude = result.Geometry.Location.Latitude;
-            var addr = result.FormattedAddress;
-            Debug("Full Address: " + addr);         // "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA"
-            Debug("Latitude: " + latitude);   // 37.4230180
-            Debug("Longitude: " + longitude); // -122.0818530
-            var loc = new GeoLocation(longitude, latitude, addr);
+            GeoLocation loc = new GoogleMapToolkitApi().GetLatLong(address);
 
             p.Id = count;
             p.Name = name;
             p.Address = address;
             p.Hours = hours;
             p.GeoLocation = loc;
-        }
+        }        
 
         private static Dictionary<string, string> GetHours(IWebDriver driver)
         {

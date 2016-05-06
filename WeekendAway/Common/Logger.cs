@@ -30,14 +30,16 @@ namespace Common
             }
         }
 
-        public static void Border()
+        public static string Border()
         {
-            Border('-');
+            return Border('-');
         }
 
-        public static void Border(char ch)
+        public static string Border(char ch)
         {
-            Debug("".PadLeft(Console.WindowWidth, ch));
+            var str = "".PadLeft(Console.WindowWidth, ch);
+            Debug(str);
+            return str;
         }
     }
 }

@@ -15,6 +15,11 @@ namespace WeekendAway
         {
             Console.WriteLine(message, args);
         }
+
+        public static Visit GetDestinations(string file)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Destination : GeoLocation
@@ -65,7 +70,7 @@ namespace WeekendAway
             Start = start;
             End = end;
         }
-    }    
+    }
 
     public class TreeNode<T>
     {
@@ -77,11 +82,11 @@ namespace WeekendAway
         {
             this.Data = data;
         }
-
+        /*
         public List<Path> DFS(Node<T> v, int numVertices)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 
     public class Edge<T> : IEdge<T>, IComparable<Edge<T>>
@@ -91,6 +96,7 @@ namespace WeekendAway
             this.Source = source;
             this.Destination = dest;
             this.Weight = weight;
+            this.IsBackTrack = false;
         }
 
         public Node<T> Source { get; }
@@ -98,11 +104,19 @@ namespace WeekendAway
         public Node<T> Destination { get; }
 
         public double Weight { get; }
+        public bool IsBackTrack { get; internal set; }
 
         public int CompareTo(Edge<T> other)
         {
             return this.Weight.CompareTo(other.Weight);
             //return Convert.ToInt32(this.Weight).CompareTo(Convert.ToInt32(other.Weight));
+        }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Edge<T>;
+            if (other == null) return false;
+            return this.Source.Equals(other.Source) && this.Destination.Equals(other.Destination);
         }
     }
 
@@ -114,9 +128,14 @@ namespace WeekendAway
 
         public int PathId { get; internal set; }
 
-        public void AddEdge(Edge<T> e)
+        public void AddEdge(Edge<T> e, bool isBackTrack = false)
         {
-            this.Route.Add(e);
+            e.IsBackTrack = isBackTrack;
+            var seen = !this.Route.Add(e);
+            if (seen)
+            {
+                Logger.Debug("Edge already added");
+            }
             this.Cost += e.Weight;
             this.Visited.Add(e.Source);
             this.Visited.Add(e.Destination);
@@ -129,16 +148,18 @@ namespace WeekendAway
         }
     }
 
-    public class Graph<T>
+    public class Graph<T> where T : IItem
     {
-        private Dictionary<T, Node<T>> nodeLookUp = new Dictionary<T, Node<T>>();
+        //private Dictionary<T, Node<T>> nodeLookUp = new Dictionary<T, Node<T>>();
         private Dictionary<int, Node<T>> idLookup = new Dictionary<int, Node<T>>();
+        public HashSet<Node<T>> Visited = new HashSet<Node<T>>();
+
         public List<Node<T>> Vertices
         {
             get
             {
                 var list = new List<Node<T>>();
-                foreach(var v in nodeLookUp.Values)
+                foreach (var v in idLookup.Values)//nodeLookUp.Values)
                 {
                     list.Add(v);
                 }
@@ -146,7 +167,7 @@ namespace WeekendAway
             }
         }
 
-        public int NumVertices { get { return nodeLookUp.Count;  } }
+        public int NumVertices { get { return idLookup.Count; } }
 
         public int NumEdges { get { return this.Edges.Count; } }
         public HashSet<Edge<T>> Edges = new HashSet<Edge<T>>();
@@ -173,15 +194,25 @@ namespace WeekendAway
             return minResult;
         }
 
-        public SearchResult<T> DFS(Graph<T> graph, Node<T> v, int visitCount)
+        public static SearchResult<T> DFS(Graph<T> graph, Node<T> origin, int visitCount)
         {
             var path = new SearchResult<T>();
             var bestPath = new SearchResult<T>() { Cost = int.MaxValue };
-            DFS(graph, path, bestPath, v, visitCount);
+            //graph.Visited.Add(origin);
+            var availableDestCount = graph.Vertices.Count - graph.Visited.Count;
+            DFS(graph, path, bestPath, origin, visitCount, availableDestCount);
+            /*
+            if (bestPath.Route.Count > 0)
+            {
+                foreach (var e in bestPath.Route)
+                {
+                    graph.Visited.Add(e.Destination);
+                }
+            }*/
             return bestPath;
         }
 
-        private static void DFS(Graph<T> graph, SearchResult<T> path, SearchResult<T> bestPath, Node<T> root, int visitCount)
+        private static void DFS(Graph<T> graph, SearchResult<T> path, SearchResult<T> bestPath, Node<T> root, int visitCount, int availableDestCount)
         {
             var neighbors = root.Edges;
             foreach (var e in neighbors)
@@ -204,18 +235,43 @@ namespace WeekendAway
                 else if (e.Destination != root) // Let's look at the destination as long as it's not pointing back to itself
                 {
                     edgeAdded = true;
-                    var visitedBefore = path.Visited.Contains(e.Destination);
+                    /*var seenBefore = graph.Visited.Count(n => n.Data.Equals(e.Destination))>0;
+                    var visitedBefore = seenBefore || path.Visited.Contains(e.Destination) || graph.Visited.Contains(e.Destination);
                     if(visitedBefore) {
                         continue;
+                    }*/
+                    bool visitedBefore = false;
+                    bool isBackTrack = false;
+                    if (path.Visited.Contains(e.Destination))
+                    {
+                        isBackTrack = true;
+                        visitedBefore = true;
+                        continue;
                     }
-                    path.AddEdge(e);
+
+                    if (graph.Visited.Contains(e.Destination))
+                    {
+                        isBackTrack = true;
+                        visitedBefore = true;
+                        continue;
+                    }
+
+                    if (path.Route.Contains(e))
+                    {
+                        isBackTrack = true;
+                        visitedBefore = true;
+                        continue;
+                    }
+                    path.AddEdge(e, isBackTrack);
+
                     if (!visitedBefore) // Only count the unique places we visit
                     {
+                        --availableDestCount;
                         --visitCount;
                     }
                     if (visitCount > 0)
                     {
-                        DFS(graph, path, bestPath, e.Destination, visitCount);
+                        DFS(graph, path, bestPath, e.Destination, visitCount, availableDestCount);
                     }
                 }
 
@@ -243,6 +299,71 @@ namespace WeekendAway
             }
         }
 
+        public void Remove(List<Edge<T>> edges)
+        {
+            foreach (var e in edges)
+            {
+                var sourceNode = e.Source;
+                var destNode = e.Destination;
+
+                sourceNode.Remove(e);
+                var success = this.Edges.Remove(e);
+                if (!success)
+                {
+                    Logger.Debug("WARNING: Unable to remove edge.....will manually look for match and remove");
+                    var numRem = this.Edges.RemoveWhere(
+                        (edge) =>
+                        {
+                            var res = e.Source.Data.Equals(edge.Source.Data) && e.Destination.Data.Equals(edge.Destination.Data);
+                            return res;
+                        });
+
+                    if (numRem == 0)
+                    {
+                        Logger.Debug("Failed to remove edge");
+                    }
+                }
+                var found = false;
+                success = this.Vertices.Remove(e.Destination);
+                if (!success)
+                {
+                    for (int j = this.Vertices.Count - 1; j >= 0; j--)
+                    {
+                        var data = this.Vertices[j].Data;
+                        if (data.Equals(e.Destination.Data))
+                        {
+                            this.Vertices.RemoveAt(j);
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (!found)
+                {
+                    Logger.Debug("Error: Could not find destination node");
+                }
+                found = false;
+                success = this.Vertices.Remove(e.Source);
+                if (!success)
+                {
+                    for (int j = this.Vertices.Count - 1; j >= 0; j--)
+                    {
+                        var data = this.Vertices[j].Data;
+                        if (data.Equals(e.Source.Data))
+                        {
+                            this.Vertices.RemoveAt(j);
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (!found)
+                {
+                    Logger.Debug("Error: Could not find source node");
+                }
+            }
+        }
+
         //public Path Prototype_MinimumSpanningTree(int numVertices)
         //{
         //    var mst = Kruskal<T>.MinimumSpanningTree(this);
@@ -266,34 +387,48 @@ namespace WeekendAway
 
         public void Add(T source, T dest, double weight)
         {
-            var sourceNode = FindAdd(source);
-            var destNode = FindAdd(dest);
+            //var sourceNode = FindAdd(source);
+            //var destNode = FindAdd(dest);
+            var sourceNode = Find(source.Id);
+            var destNode = Find(dest.Id);
+            if (sourceNode == null)
+            {
+                sourceNode = new Node<T>(source);
+            }
+            if (destNode == null)
+            {
+                destNode = new Node<T>(dest);
+            }
 
             sourceNode.Add(new Edge<T>(sourceNode, destNode, weight));
-            Add(new Edge<T>(sourceNode, destNode, weight), addNodes:false);
+            Add(new Edge<T>(sourceNode, destNode, weight));
         }
 
-        public void Add(Edge<T> edge, bool addNodes = true)
+        public void Add(Edge<T> edge)
         {
             if (!this.Edges.Contains(edge))
             {
                 this.Edges.Add(edge);
             }
-            if(addNodes)
-            {
-                AddToLookup(edge.Source);
-                AddToLookup(edge.Destination);
-            }
+
+            AddToLookup(edge.Source);
+            AddToLookup(edge.Destination);
+
         }
 
         private void AddToLookup(Node<T> node)
         {
-            if (!nodeLookUp.ContainsKey(node.Data))           
+            //if (!nodeLookUp.ContainsKey(node.Data))           
+            //{
+            //    nodeLookUp.Add(node.Data, node);
+            //}
+            if (!idLookup.ContainsKey(node.Data.Id))
             {
-                nodeLookUp.Add(node.Data, node);
+                AddLookupId(node.Data.Id, node);
             }
         }
 
+        /*
         private Node<T> FindAdd(T source)
         {
             Node<T> node = Find(source);
@@ -304,16 +439,18 @@ namespace WeekendAway
 
             return node;
         }
+        */
 
-        public Node<T> Find(T source)
+        /*
+    public Node<T> Find(T source)
+    {
+        if (nodeLookUp.ContainsKey(source))
         {
-            if (nodeLookUp.ContainsKey(source))
-            {
-                return nodeLookUp[source];
-            }
-            return null;
+            return nodeLookUp[source];
         }
-
+        return null;
+    }
+    */
         public Node<T> Find(int id)
         {
             if (idLookup.ContainsKey(id))
@@ -325,11 +462,15 @@ namespace WeekendAway
 
         public void AddLookupId(int id, Node<T> node)
         {
+            if (node == null)
+            {
+                throw new InvalidOperationException();
+            }
             idLookup.Add(id, node);
         }
     }
 
-    public class Kruskal<T>
+    public class Kruskal<T> where T : IItem
     {
         public static /*TreeNode<T>*/Graph<T> MinimumSpanningTree(Graph<T> graph)
         {
@@ -534,10 +675,52 @@ namespace WeekendAway
             this.Neighbors.Add(e.Destination);
             this.Edges.Add(e);
         }
+
+        public void Remove(Edge<T> e)
+        {
+            var success = this.Neighbors.Remove(e.Destination);
+            if (!success) { throw new InvalidOperationException("Error: Unable to remove neighbor!"); }
+            success = this.Edges.Remove(e);
+            if (!success) { throw new InvalidOperationException("Error: Unable to remove from edge list!"); }
+        }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Node<T>;
+            if (other == null) return false;
+            return this.Data.Equals(other.Data);
+        }
     }
 
     public static class Extensions
     {
+        public static string PrintRoute(this SearchResult<Place> local)
+        {
+            var stepCount = 1;
+            var sb = new StringBuilder();
+            foreach (var step in local.Route)
+            {
+                var sourceData = step.Source.Data;
+                var destData = step.Destination.Data;
+                string backtrack = step.IsBackTrack ? "[BACKTRACK]" : string.Empty;
+                sb.AppendLine(string.Format("{0}) From {1} go to {2} (Distance:{3}) {4}", stepCount++, sourceData.Name + " [" + sourceData.Address + "] ", destData.Name + " [" + destData.Address + "] ", step.Weight, backtrack));
+
+            }
+            sb.AppendLine();
+            var str = sb.ToString();
+            Logger.Debug(str);
+            return str;
+        }
+
+        public static string Print(this Edge<Place> e)
+        {
+            var sourceData = e.Source.Data;
+            var destData = e.Destination.Data;
+            string backtrack = e.IsBackTrack ? "[BACKTRACK]" : string.Empty;
+            var str = string.Format("From {0} go to {1} (Distance:{2}) {3}", sourceData.Name, destData.Name, e.Weight, backtrack);
+            return str;
+        }
+
         public static Destination Add(this List<Destination> locations, GeoLocation geoLoc)
         {
             Destination dest;

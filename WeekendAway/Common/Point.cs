@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    public class Point
+    public class Point : IItem
     {
         public double X;
         public double Y;
@@ -18,5 +18,13 @@ namespace Common
         }
 
         public Point(double x, double y) { this.X = x; this.Y = y; }
+
+        public int Id
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

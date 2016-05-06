@@ -1,5 +1,6 @@
 ﻿using Common;
 using Google.Maps.DistanceMatrix;
+using Google.Maps.Geocoding;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -138,6 +139,7 @@ namespace Toolkit
             var resultPos = 0;
             foreach (var dest in destinations)
             {
+                //if (dest.Visited) { continue; }
                 if (!Init(dest, origin)) { continue; }                                
                 var x = dest.GeoLocation.Longitude - origin.GeoLocation.Longitude;
                 var y = dest.GeoLocation.Latitude - origin.GeoLocation.Latitude;
@@ -174,7 +176,8 @@ namespace Toolkit
                 for (int j = 0; j < destinations.Count; j++)
                 {
                     var dest = destinations[j];
-                    if(!Init(dest,origin)) { continue; }
+                    //if (dest.Visited) { continue; }
+                    if (!Init(dest,origin)) { continue; }
 
                     reverseLookup.Add(index, j);
                     ++index;
@@ -234,6 +237,25 @@ namespace Toolkit
             }
         }
 
+        public GeoLocation GetLatLong(string address)
+        {
+            GeocodingRequest request = new GeocodingRequest();
+            request.Address = address;
+            request.Sensor = false;
+            GeocodingService svc = new GeocodingService();
+            var response = svc.GetResponse(request);
+            var result = response.Results.First();
+
+            var longitude = result.Geometry.Location.Longitude;
+            var latitude = result.Geometry.Location.Latitude;
+            var addr = result.FormattedAddress;
+            Logger.Debug("Full Address: " + addr);         // "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA"
+            Logger.Debug("Latitude: " + latitude);   // 37.4230180
+            Logger.Debug("Longitude: " + longitude); // -122.0818530
+            var loc = new GeoLocation(longitude, latitude, addr);
+            return loc;
+        }
+
         public DistanceResult DistanceMatrix(Place origin, List<Place> destinations)
         {
             DistanceMatrixRequest req = new DistanceMatrixRequest();
@@ -243,6 +265,7 @@ namespace Toolkit
             for (int j = 0; j < destinations.Count; j++)
             {
                 var dest = destinations[j];
+                //if (dest.Visited) { continue; }
                 if (!Init(dest, origin)) { continue; }
                 req.AddDestination(new Google.Maps.Waypoint((decimal)dest.GeoLocation.Latitude, (decimal)dest.GeoLocation.Longitude));
                 reverseLookup.Add(index, j);

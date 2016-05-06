@@ -61,16 +61,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library.cs" />
-    <Compile Include="Path.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prototype.cs" />
+    <Compile Include="Prototype\Prototype2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="visit3.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="visit2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="visit.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
