@@ -1,0 +1,5 @@
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\InterviewsLib\bin\Debug\InterviewsLib.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\InterviewsLib\bin\Debug\InterviewsLib.pdb
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\InterviewsLib\obj\Debug\InterviewsLib.csprojResolveAssemblyReference.cache
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\InterviewsLib\obj\Debug\InterviewsLib.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\InterviewsLib\obj\Debug\InterviewsLib.pdb

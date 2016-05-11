@@ -1,0 +1,15 @@
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\KazmonWatcher.exe.config
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\config.json
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\KazmonWatcher.exe
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\KazmonWatcher.pdb
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\Common.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\Newtonsoft.Json.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\WebDriver.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\WebDriver.Support.dll
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\Common.pdb
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\Newtonsoft.Json.xml
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\WebDriver.xml
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\bin\Debug\WebDriver.Support.xml
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\obj\Debug\KazmonWatcher.csprojResolveAssemblyReference.cache
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\obj\Debug\KazmonWatcher.exe
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\KazmonWatcher\obj\Debug\KazmonWatcher.pdb
