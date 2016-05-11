@@ -1,0 +1,6 @@
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\bin\Debug\RandomQuestionAsker.exe.config
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\bin\Debug\RandomQuestionAsker.exe
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\bin\Debug\RandomQuestionAsker.pdb
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.csprojResolveAssemblyReference.cache
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.exe
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.pdb
