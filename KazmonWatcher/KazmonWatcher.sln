@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KazmonWatcher", "KazmonWatc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\WeekendAway\Common\Common.csproj", "{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit", "Toolkit\Toolkit.csproj", "{DBB5C28B-38DD-43EA-B5C1-373480424EAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB5C28B-38DD-43EA-B5C1-373480424EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB5C28B-38DD-43EA-B5C1-373480424EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB5C28B-38DD-43EA-B5C1-373480424EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB5C28B-38DD-43EA-B5C1-373480424EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
