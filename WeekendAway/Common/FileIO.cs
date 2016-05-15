@@ -23,7 +23,21 @@ namespace Common
 
         public static string ReadAll(string file)
         {
-            using (var sr = new StreamReader(new FileStream(file, FileMode.Open, FileAccess.ReadWrite)))
+            var stream = new FileStream(file, FileMode.Open, FileAccess.ReadWrite);
+            return ReadAll(stream);
+        }
+
+        public static string ReadAll(Stream stream)
+        {            
+            using (var sr = new StreamReader(stream))
+            {
+                return sr.ReadToEnd();
+            }
+        }
+
+        public static string ReadAll(StreamReader sr)
+        {
+            using (sr)
             {
                 return sr.ReadToEnd();
             }
