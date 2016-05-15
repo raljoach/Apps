@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E4F6B4B-9BAD-4EA2-80B3-5D9903D3B371}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HouseFlipper</RootNamespace>
+    <AssemblyName>HouseFlipper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="data\MLS Data Export\ocactive1.csv" />
+    <None Include="data\MLS Data Export\ocactive2.csv" />
+    <None Include="data\MLS Data Export\ocactive3.csv" />
+    <None Include="data\MLS Data Export\ocactive4.csv" />
+    <None Include="data\MLS Data Export\ocover175k1.csv" />
+    <None Include="data\MLS Data Export\ocover175k10.csv" />
+    <None Include="data\MLS Data Export\ocover175k2.csv" />
+    <None Include="data\MLS Data Export\ocover175k3.csv" />
+    <None Include="data\MLS Data Export\ocover175k4.csv" />
+    <None Include="data\MLS Data Export\ocover175k5.csv" />
+    <None Include="data\MLS Data Export\ocover175k6.csv" />
+    <None Include="data\MLS Data Export\ocover175k7.csv" />
+    <None Include="data\MLS Data Export\ocover175k8.csv" />
+    <None Include="data\MLS Data Export\ocover175k9.csv" />
+    <None Include="data\MLS Data Export\ocunder175k1.csv" />
+    <None Include="data\MLS Data Export\ocunder175k10.csv" />
+    <None Include="data\MLS Data Export\ocunder175k2.csv" />
+    <None Include="data\MLS Data Export\ocunder175k3.csv" />
+    <None Include="data\MLS Data Export\ocunder175k4.csv" />
+    <None Include="data\MLS Data Export\ocunder175k5.csv" />
+    <None Include="data\MLS Data Export\ocunder175k6.csv" />
+    <None Include="data\MLS Data Export\ocunder175k7.csv" />
+    <None Include="data\MLS Data Export\ocunder175k8.csv" />
+    <None Include="data\MLS Data Export\ocunder175k9.csv" />
+    <None Include="data\MLS Data Export\ocunder175kactive.csv" />
+    <None Include="data\MLS Data Export\Osceola 1.csv" />
+    <None Include="data\MLS Data Export\Osceola 2.csv" />
+    <None Include="data\MLS Data Export\Osceola 3.csv" />
+    <None Include="data\MLS Data Export\Osceola 4.csv" />
+    <None Include="data\MLS Data Export\Osceola 5.csv" />
+    <None Include="data\MLS Data Export\Osceola Active2.csv" />
+    <None Include="data\MLS Data Export\OsceolaActive1.csv" />
+    <None Include="data\MLS Data Export\Polk1.csv" />
+    <None Include="data\MLS Data Export\polk10.csv" />
+    <None Include="data\MLS Data Export\polk2.csv" />
+    <None Include="data\MLS Data Export\polk3.csv" />
+    <None Include="data\MLS Data Export\Polk4.csv" />
+    <None Include="data\MLS Data Export\polk5.csv" />
+    <None Include="data\MLS Data Export\polk6.csv" />
+    <None Include="data\MLS Data Export\polk7.csv" />
+    <None Include="data\MLS Data Export\polk8.csv" />
+    <None Include="data\MLS Data Export\polk9.csv" />
+    <None Include="data\MLS Data Export\polkactive1.csv" />
+    <None Include="data\MLS Data Export\polkactive2.csv" />
+    <None Include="data\MLS Data Export\polkactive3.csv" />
+    <None Include="data\MLS Data Export\seminole active.csv" />
+    <None Include="data\MLS Data Export\seminole active2.csv" />
+    <None Include="data\MLS Data Export\seminole1.csv" />
+    <None Include="data\MLS Data Export\seminole10.csv" />
+    <None Include="data\MLS Data Export\seminole2.csv" />
+    <None Include="data\MLS Data Export\seminole3.csv" />
+    <None Include="data\MLS Data Export\seminole4.csv" />
+    <None Include="data\MLS Data Export\seminole5.csv" />
+    <None Include="data\MLS Data Export\seminole6.csv" />
+    <None Include="data\MLS Data Export\seminole7.csv" />
+    <None Include="data\MLS Data Export\seminole8.csv" />
+    <None Include="data\MLS Data Export\seminole9.csv" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeekendAway\Common\Common.csproj">
+      <Project>{27e605de-ea8e-47c9-a2bd-6b0ee30f64f9}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Common\HouseFlipper.Common.csproj">
+      <Project>{363eddb4-a9e1-4a26-b8d9-37485a1fa468}</Project>
+      <Name>HouseFlipper.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="json\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
