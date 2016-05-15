@@ -1,0 +1,14 @@
+c:\users\ralph.joachim\documents\visual studio 2015\Projects\HouseFlipper\bin\Debug\HouseFlipper.exe.config
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\obj\Debug\HouseFlipper.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\HouseFlipper.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\HouseFlipper.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\HouseFlipper.Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\WebDriver.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\HouseFlipper.Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\WebDriver.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\obj\Debug\HouseFlipper.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\obj\Debug\HouseFlipper.pdb

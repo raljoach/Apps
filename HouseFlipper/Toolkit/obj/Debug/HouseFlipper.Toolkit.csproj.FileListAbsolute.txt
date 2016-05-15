@@ -1,0 +1,6 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\bin\Debug\Toolkit.exe.config
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\bin\Debug\Toolkit.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\bin\Debug\Toolkit.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\obj\Debug\HouseFlipper.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\obj\Debug\Toolkit.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\Toolkit\obj\Debug\Toolkit.pdb
