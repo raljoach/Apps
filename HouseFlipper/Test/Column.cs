@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test
+namespace HouseFlipper.Test
 {
     class Column
     {
@@ -43,7 +43,9 @@ namespace Test
         {
             if (maxLength > someStr.Length)
             {
-                someStr = someStr.PadRight(maxLength - someStr.Length);
+                var delta = maxLength - someStr.Length;
+                var totalWidth = someStr.Length + delta;
+                someStr = someStr.PadRight(totalWidth);
             }
             return someStr;
         }

@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Web.Driver;
 using Google.Maps.DistanceMatrix;
 using Google.Maps.Geocoding;
 using OpenQA.Selenium;
@@ -8,8 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeekendAway.Common;
 
-namespace Toolkit
+namespace WeekendAway.Toolkit
 {
     public class DistanceResult
     {
@@ -219,7 +221,7 @@ namespace Toolkit
             switch (browserType)
             {
                 case BrowserType.Phantom:
-                    return Common.PhantomJSExt.InitPhantomJS();
+                    return PhantomJSExt.InitPhantomJS();
                 case BrowserType.Chrome:
                     return new ChromeDriver();
                 default:

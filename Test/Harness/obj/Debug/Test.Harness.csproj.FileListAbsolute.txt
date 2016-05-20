@@ -1,0 +1,9 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\obj\Debug\Test.Harness.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Test.Harness.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Test.Harness.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Test.Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Test.Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\obj\Debug\Test.Harness.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\obj\Debug\Test.Harness.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Test\Harness\bin\Debug\Common.pdb

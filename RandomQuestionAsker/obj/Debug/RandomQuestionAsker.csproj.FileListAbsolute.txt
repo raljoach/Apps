@@ -4,3 +4,11 @@ c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker
 c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.csprojResolveAssemblyReference.cache
 c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.exe
 c:\users\ralph.joachim\documents\visual studio 2015\Projects\RandomQuestionAsker\obj\Debug\RandomQuestionAsker.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\InterviewsLib.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\WebDriver.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\InterviewsLib.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\RandomQuestionAsker\bin\Debug\WebDriver.xml

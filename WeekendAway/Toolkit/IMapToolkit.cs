@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using Common;
+using WeekendAway.Common;
 
-namespace Toolkit
+namespace WeekendAway.Toolkit
 {
     public interface IMapToolkit
     {

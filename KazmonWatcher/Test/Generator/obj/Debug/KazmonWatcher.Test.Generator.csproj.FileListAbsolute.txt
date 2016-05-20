@@ -1,0 +1,6 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\bin\Debug\KazmonWatcher.Test.Generator.exe.config
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\bin\Debug\KazmonWatcher.Test.Generator.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\bin\Debug\KazmonWatcher.Test.Generator.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\obj\Debug\KazmonWatcher.Test.Generator.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\obj\Debug\KazmonWatcher.Test.Generator.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\KazmonWatcher\Test\Generator\obj\Debug\KazmonWatcher.Test.Generator.pdb

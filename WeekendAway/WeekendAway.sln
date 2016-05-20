@@ -5,13 +5,17 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekendAway", "WeekendAway.csproj", "{68B96AB1-5A30-4C0E-8FC8-FFAF315DAA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit", "Toolkit\Toolkit.csproj", "{C3F607D5-2971-4868-A7D7-E80D26DBF45B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekendAway.Toolkit", "Toolkit\WeekendAway.Toolkit.csproj", "{C3F607D5-2971-4868-A7D7-E80D26DBF45B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekendAway.Common", "Common\WeekendAway.Common.csproj", "{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekendAway.Test", "Test\WeekendAway.Test.csproj", "{8922F9D4-FA31-40CD-9383-8F0A01A001D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{F64795C7-E6C5-491A-B049-28F4ED77BFF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Test", "Common\Test\Common.Test.csproj", "{F9049C7B-1643-45D7-969D-80FD53733E6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Web.Driver", "..\Common\Web\Driver\Common.Web.Driver.csproj", "{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{40AE214C-CE1C-4865-8FD8-7D79AAFB94D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeekendAwayLibraries", "WeekendAwayLibraries", "{2E6819D9-EE55-4B40-93F0-EF53C5D9A586}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,16 +35,22 @@ Global
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8922F9D4-FA31-40CD-9383-8F0A01A001D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8922F9D4-FA31-40CD-9383-8F0A01A001D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8922F9D4-FA31-40CD-9383-8F0A01A001D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8922F9D4-FA31-40CD-9383-8F0A01A001D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9049C7B-1643-45D7-969D-80FD53733E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9049C7B-1643-45D7-969D-80FD53733E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9049C7B-1643-45D7-969D-80FD53733E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9049C7B-1643-45D7-969D-80FD53733E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64795C7-E6C5-491A-B049-28F4ED77BFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64795C7-E6C5-491A-B049-28F4ED77BFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64795C7-E6C5-491A-B049-28F4ED77BFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64795C7-E6C5-491A-B049-28F4ED77BFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3F607D5-2971-4868-A7D7-E80D26DBF45B} = {2E6819D9-EE55-4B40-93F0-EF53C5D9A586}
+		{27E605DE-EA8E-47C9-A2BD-6B0EE30F64F9} = {2E6819D9-EE55-4B40-93F0-EF53C5D9A586}
+		{F64795C7-E6C5-491A-B049-28F4ED77BFF9} = {40AE214C-CE1C-4865-8FD8-7D79AAFB94D0}
+		{5FCD64F9-EE5C-4ABA-A1B7-052D2F9AC773} = {40AE214C-CE1C-4865-8FD8-7D79AAFB94D0}
 	EndGlobalSection
 EndGlobal

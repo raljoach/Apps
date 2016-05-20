@@ -1,0 +1,9 @@
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\obj\Debug\HouseFlipper.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\obj\Debug\HouseFlipper.UnitTests.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\obj\Debug\HouseFlipper.UnitTests.pdb

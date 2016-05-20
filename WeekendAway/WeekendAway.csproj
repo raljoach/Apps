@@ -81,13 +81,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Common\Common.csproj">
-      <Project>{27e605de-ea8e-47c9-a2bd-6b0ee30f64f9}</Project>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{f64795c7-e6c5-491a-b049-28f4ed77bff9}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="Toolkit\Toolkit.csproj">
+    <ProjectReference Include="Common\WeekendAway.Common.csproj">
+      <Project>{27e605de-ea8e-47c9-a2bd-6b0ee30f64f9}</Project>
+      <Name>WeekendAway.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Toolkit\WeekendAway.Toolkit.csproj">
       <Project>{c3f607d5-2971-4868-a7d7-e80d26dbf45b}</Project>
-      <Name>Toolkit</Name>
+      <Name>WeekendAway.Toolkit</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

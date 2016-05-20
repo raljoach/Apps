@@ -12,8 +12,9 @@ using OpenQA.Selenium.Remote;
 using Google.Maps.Geocoding;
 using Common;
 using Newtonsoft.Json;
+using WeekendAway.Common;
 
-namespace Toolkit
+namespace WeekendAway.Toolkit
 {
     public partial class Program
     {

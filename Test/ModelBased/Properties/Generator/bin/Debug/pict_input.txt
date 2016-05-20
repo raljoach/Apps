@@ -1,0 +1,6 @@
+MlsNumber: Null, Blank, NonBlank
+Status: Null, ACT, SLD
+PostalCode: Null, Blank, NonBlank
+Address: Null, Blank, NonBlank
+City: Null, Blank, NonBlank
+CloseDate: Null, Blank, NonBlank

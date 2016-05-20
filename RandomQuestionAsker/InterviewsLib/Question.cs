@@ -8,13 +8,16 @@ namespace InterviewsLib
 {
     public class Question
     {
-        private string qText;
-
         public Question(string qText, string url, List<string> tags)
         {
-            this.qText = qText;
-            Url = url;
-            Tags = tags;
+            this.Text = qText;
+            this.Url = url;
+            this.Tags = tags;
+        }
+
+        public Question(string name, string qText, string url, List<string> tags) : this(qText,url,tags)
+        {
+            this.Name = name;
         }
 
         public Question() { }
@@ -25,5 +28,6 @@ namespace InterviewsLib
         public string Url { get; set; }
         public List<string> Keywords { get; set; }
         public string Topic { get; set; }
+        public string Name { get; set; }
     }
 }

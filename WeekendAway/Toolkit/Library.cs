@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.IO;
 using OpenQA.Selenium.PhantomJS;
 using System;
 using System.Collections.Generic;
@@ -6,8 +7,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeekendAway.Common;
 
-namespace Toolkit
+namespace WeekendAway.Toolkit
 {
     //Class PhantomJS driver extensions, additional methods, decorator
     //Name: PhantomJSDriverExt

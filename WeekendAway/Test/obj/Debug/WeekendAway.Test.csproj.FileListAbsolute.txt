@@ -14,11 +14,15 @@ C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bi
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WebDriver.xml
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\obj\Debug\Test.WeekendAway.dll
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\obj\Debug\Test.WeekendAway.pdb
-C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Toolkit.exe
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Google.Maps.dll
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WebDriver.Support.dll
-C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Toolkit.pdb
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Google.Maps.pdb
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WebDriver.Support.xml
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WeekendAway.Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WeekendAway.Toolkit.exe
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Common.Web.Driver.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WeekendAway.Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\WeekendAway.Toolkit.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Test\bin\Debug\Common.Web.Driver.pdb
