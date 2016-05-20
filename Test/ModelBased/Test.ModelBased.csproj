@@ -48,13 +48,13 @@
     <Compile Include="TestMachine.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Automata\Automata.csproj">
+      <Project>{8aa5b836-1f39-4947-925c-568319f7e975}</Project>
+      <Name>Automata</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Common\Common.csproj">
       <Project>{f64795c7-e6c5-491a-b049-28f4ed77bff9}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\StateMachine\Automata.csproj">
-      <Project>{8aa5b836-1f39-4947-925c-568319f7e975}</Project>
-      <Name>Automata</Name>
     </ProjectReference>
     <ProjectReference Include="..\Common\Test.Common.csproj">
       <Project>{1f93af1f-4df0-4f95-804a-792d7880f0c8}</Project>
