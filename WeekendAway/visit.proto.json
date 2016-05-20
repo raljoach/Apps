@@ -1,0 +1,34 @@
+﻿{
+  "Places": [
+    {
+      "Name": "Polynesian Cultural Center",
+      "Address": "55-370 Kamehameha Hwy, Laie, HI 96762",
+      "BusinessHours": [
+        {
+          "Days": "Monday-Sunday",
+          "Open": "11:45 AM",
+          "Close": "9 PM"
+        }
+      ],     
+      "GeoLocation": {
+        "Longitude": "",
+        "Latitude": ""
+      }
+    },
+    {
+      "Name": "USS Bowfin",
+      "Address": "11 Arizona Memorial Dr, Honolulu, HI 96818",
+      "BusinessHours": [
+        {
+          "Days": "Monday-Sunday",
+          "Open": "7 AM",
+          "Close": "5 PM"
+        }
+      ],     
+      "GeoLocation": {
+        "Longitude": "",
+        "Latitude": ""
+      }
+    }
+  ]
+}

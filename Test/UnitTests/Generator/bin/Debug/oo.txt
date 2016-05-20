@@ -1,0 +1,70 @@
+﻿namespace: HouseFlipper
+// TEST CLASS: SKIP
+Primary Noun: X:MlsRow
+Act on Noun: StringDictionary data
+Verb: V:Constructor
+Signature: MlsRow(R:StringDictionary data)
+Factory: MlsDataFactory
+Details:
+	- P:MlsNumber: Blank, NonBlank, Null
+	- P:PostalCode: Blank, NonBlank, Null
+	- P:Address: Blank, NonBlank, Null
+	- P:City: Blank, NonBlank, Null
+	- P:CloseDate: Blank, NonBlank, Null
+
+-------------------------------
+// TEST CLASS: SKIP
+Primary Noun: X:MlsSummary
+Act on Noun: MlsRow
+Verb: V:Add
+Signature: House Add(MlsRow row)
+Parameters: MlsRow row
+Return: House
+Details:
+	- D:Error
+	  - INPUT: {null,null,null,null,null,null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => {Exception}
+	- D:Example
+	- D:Simple
+    - D:Big
+	- D:Unique
+	- D:Random
+      - INPUT: {Null,SLD,NonBlank,NonBlank,NonBlank,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Blank,Null,Blank,Null,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Null,ACT,Null,Blank,Blank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {NonBlank,Null,Blank,Blank,Blank,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {NonBlank,SLD,NonBlank,Null,Blank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {NonBlank,ACT,NonBlank,NonBlank,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Blank,SLD,Null,NonBlank,Blank,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Blank,Null,NonBlank,Blank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Null,ACT,Blank,Null,NonBlank,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {NonBlank,SLD,Null,Blank,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Blank,ACT,Null,Null,Null,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {NonBlank,SLD,Blank,NonBlank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Null,Null,Null,NonBlank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	  - INPUT: {Null,SLD,Null,Blank,Null,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null
+	-D:Boundary
+-------------------------------------------
+// TEST CLASS: SKIP
+Primary Noun: X:MlsSummary
+Act on Noun: MlsRow
+Verb: V:Add
+Signature: House Average(MlsRow row)
+Return: House
+Details:
+	- D:Error
+	- D:Example
+	- D:Simple
+    - D:Big
+	- D:Unique
+	-D:Boundary
+-------------------------------------------
+//TEST CLASS:
+Noun: X:MlsSummary
+Verb: V:SoldCount
+Details:
+-D:Example
+-D:Simple
+-D:Error
+-D:Unique
+-D:Boundary
+-D:Big

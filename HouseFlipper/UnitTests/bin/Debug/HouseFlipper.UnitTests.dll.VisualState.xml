@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1007]C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll</TopNode>
+  <SelectedNode>[0-1004]HouseFlipper.UnitTests.MlsSummaryTest.SoldCount_Unique</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1007]C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1008]HouseFlipper" Expanded="true" />
+    <Node UniqueName="[0-1009]HouseFlipper.UnitTests" Expanded="true" />
+    <Node UniqueName="[0-1000]HouseFlipper.UnitTests.MlsSummaryTest" Expanded="true" />
+  </Nodes>
+</VisualState>

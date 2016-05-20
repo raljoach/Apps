@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test
+namespace HouseFlipper.Test
 {
     class Grid
     {
@@ -30,12 +30,19 @@ namespace Test
 
             for (var rowNum = 0; rowNum < maxValCount; rowNum++)
             {
-                foreach (var c in cols)
-                {
-                    output = WriteRow(output, c, rowNum);
-                    output += "\r\n";
-                }
+                output = WriteRow(output, rowNum);
             }
+        }
+
+        private string WriteRow(string output, int rowNum)
+        {
+            foreach (var c in cols)
+            {
+                output = WriteField(output, c, rowNum);
+
+            }
+            output += "\r\n";
+            return output;
         }
 
         private int MaxValCount(List<Column> cols)
@@ -51,12 +58,13 @@ namespace Test
             return max;
         }
 
-        private static string WriteRow(string output, Column c, int index)
+        private static string WriteField(string output, Column c, int index)
         {
             string v = null;
             if (index < c.Values.Count)
             {
                 v = c.Values[index];
+                ///v = v.PadRight(c.MaxLength-v.Length);
             }
             else
             {

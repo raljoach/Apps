@@ -1,0 +1,435 @@
+
+PATH #1: Here are the 11 nearby places to visit. Total Distance Cost: 0.153003198890705
+------------------------------------------------------------------------------------------------------------------------
+1) From Hilton Hawaiian Village Waikiki Beach Resort [2005 Kalia Rd, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0136453644729642) 
+2) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00606389693926409) 
+3) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+4) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+5) From Kuhio Beach Park [Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00553884446883659) 
+6) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0282195131859236) 
+7) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+9) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+10) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+11) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+
+
+PATH #2: Here are the 11 nearby places to visit. Total Distance Cost: 0.140745962239658
+------------------------------------------------------------------------------------------------------------------------
+1) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00606389693926409) 
+2) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+3) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+4) From Kuhio Beach Park [Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00553884446883659) 
+5) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0282195131859236) 
+6) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+7) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #3: Here are the 11 nearby places to visit. Total Distance Cost: 0.152568360548152
+------------------------------------------------------------------------------------------------------------------------
+1) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+2) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+3) From Kuhio Beach Park [Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00553884446883659) 
+4) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+5) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0356075454321201) 
+6) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+7) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #4: Here are the 11 nearby places to visit. Total Distance Cost: 0.152297175646904
+------------------------------------------------------------------------------------------------------------------------
+1) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+2) From Kuhio Beach Park [Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+3) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+4) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+5) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0356075454321201) 
+6) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+7) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #5: Here are the 11 nearby places to visit. Total Distance Cost: 0.152297175646904
+------------------------------------------------------------------------------------------------------------------------
+1) From Kuhio Beach Park [Honolulu, HI 96815]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0) 
+2) From Diamond Head [Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+3) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+4) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+5) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0356075454321201) 
+6) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+7) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #6: Here are the 11 nearby places to visit. Total Distance Cost: 0.150863483241895
+------------------------------------------------------------------------------------------------------------------------
+1) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+2) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+3) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+4) From Kuhio Beach Park [Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00906457059655326) 
+5) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.0356075454321201) 
+6) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0668058881693813) 
+7) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #7: Here are the 11 nearby places to visit. Total Distance Cost: 0.192187224066557
+------------------------------------------------------------------------------------------------------------------------
+1) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+2) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+3) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+4) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+5) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+6) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+7) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0258608224726105) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #8: Here are the 11 nearby places to visit. Total Distance Cost: 0.200696082437252
+------------------------------------------------------------------------------------------------------------------------
+1) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+2) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+3) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+4) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+5) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+6) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+7) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+8) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0447496671094937) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #9: Here are the 11 nearby places to visit. Total Distance Cost: 0.19035727264974
+------------------------------------------------------------------------------------------------------------------------
+1) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+2) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+3) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+4) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+5) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+6) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0155192088490353) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0175750030196309) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #10: Here are the 11 nearby places to visit. Total Distance Cost: 0.190369206132812
+------------------------------------------------------------------------------------------------------------------------
+1) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+2) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.0023667322303077) 
+3) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+4) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+5) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+6) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0155192088490353) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0175750030196309) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #11: Here are the 11 nearby places to visit. Total Distance Cost: 0.202719419895524
+------------------------------------------------------------------------------------------------------------------------
+1) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+2) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00208014252636979) 
+3) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00413787171623089) 
+4) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+5) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0094230720426147) 
+6) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.0155192088490353) 
+7) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0258608224726105) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #12: Here are the 11 nearby places to visit. Total Distance Cost: 0.20247610165579
+------------------------------------------------------------------------------------------------------------------------
+1) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+2) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+3) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00413787171623089) 
+4) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+5) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0094230720426147) 
+6) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.0155192088490353) 
+7) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0258608224726105) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #13: Here are the 11 nearby places to visit. Total Distance Cost: 0.200333297457052
+------------------------------------------------------------------------------------------------------------------------
+1) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+2) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+3) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+4) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+5) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.00906334081287178) 
+6) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.0155192088490353) 
+7) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0258608224726105) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #14: Here are the 11 nearby places to visit. Total Distance Cost: 0.183901404613577
+------------------------------------------------------------------------------------------------------------------------
+1) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00737313545854019) 
+2) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+3) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+4) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+5) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+6) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.00906334081287178) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0175750030196309) 
+8) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+9) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+
+
+PATH #15: Here are the 11 nearby places to visit. Total Distance Cost: 0.0975170085545016
+------------------------------------------------------------------------------------------------------------------------
+1) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.0266354768119645) 
+2) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+3) From Kuhio Beach Park [Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+4) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+5) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+6) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0367359684301299) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+8) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+9) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+10) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+11) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+
+
+PATH #16: Here are the 11 nearby places to visit. Total Distance Cost: 0.400699330555412
+------------------------------------------------------------------------------------------------------------------------
+1) From Tantalus [Honolulu, HI 96822]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+2) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0349948791113796) 
+3) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0641835398229282) 
+4) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+5) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Koko Head [Honolulu, HI 96825]  (Distance:0.119610359671434) 
+6) From Koko Head [Honolulu, HI 96825]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.101181130814642) 
+7) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.0266354768119645) 
+8) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+9) From Kuhio Beach Park [Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+10) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+11) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+
+
+PATH #17: Here are the 11 nearby places to visit. Total Distance Cost: 0.143042035254414
+------------------------------------------------------------------------------------------------------------------------
+1) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+2) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+3) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+4) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+5) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+6) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+7) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+8) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+9) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+10) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0522551526358808) 
+11) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00606389693926409) 
+
+
+PATH #18: Here are the 11 nearby places to visit. Total Distance Cost: 0.171973017426529
+------------------------------------------------------------------------------------------------------------------------
+1) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+2) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+3) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+4) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+5) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+6) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+7) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+8) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+9) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+10) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.00737313545854019) 
+11) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0522551526358808) 
+
+
+PATH #19: Here are the 11 nearby places to visit. Total Distance Cost: 0.196861315082508
+------------------------------------------------------------------------------------------------------------------------
+1) From Koko Head [Honolulu, HI 96825]  go to Shangri La [4055 Papu Cir, Honolulu, HI 96816]  (Distance:0.101181130814642) 
+2) From Shangri La [4055 Papu Cir, Honolulu, HI 96816]  go to Diamond Head [Honolulu, HI 96815]  (Distance:0.0266354768119645) 
+3) From Diamond Head [Honolulu, HI 96815]  go to Kuhio Beach Park [Honolulu, HI 96815]  (Distance:0) 
+4) From Kuhio Beach Park [Honolulu, HI 96815]  go to Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  (Distance:0.00333711050610192) 
+5) From Honolulu Zoo [151 Kapahulu Ave, Honolulu, HI 96815]  go to Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.00526765956758836) 
+6) From Waikiki Aquarium [2777 Kalakaua Ave, Honolulu, HI 96815]  go to Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  (Distance:0.0104982630015619) 
+7) From Duke Kahanamoku Statue [Kalakaua Ave, Honolulu, HI 96815]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0367359684301299) 
+8) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+9) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+10) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #20: Here are the 11 nearby places to visit. Total Distance Cost: 0.205572493965988
+------------------------------------------------------------------------------------------------------------------------
+1) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+2) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+3) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+4) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+5) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+6) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+8) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+9) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+10) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+11) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+
+
+PATH #21: Here are the 11 nearby places to visit. Total Distance Cost: 0.194741852724724
+------------------------------------------------------------------------------------------------------------------------
+1) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.0182135835696869) 
+2) From Lanikai Beach [Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0641835398229282) 
+3) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+4) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+5) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+6) From The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  go to Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  (Distance:0.0175750030196309) 
+7) From Honolulu Museum of Art [900 S Beretania St, Honolulu, HI 96814]  go to Mission Houses Museum [553 S King St, Honolulu, HI 96813]  (Distance:0.00906334081287178) 
+8) From Mission Houses Museum [553 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.000399438568495127) 
+9) From Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+10) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+11) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+
+
+PATH #22: Here are the 11 nearby places to visit. Total Distance Cost: 0.861383820703055
+------------------------------------------------------------------------------------------------------------------------
+1) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.147002687543465) 
+2) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.0111955357142845) 
+3) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.11333313349735) 
+4) From Sunset Beach [Pupukea, HI 96712]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.039755376994822) 
+5) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+6) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  (Distance:0.111370162101433) 
+7) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  (Distance:0.197676660449354) 
+8) From Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.230452176835254) 
+9) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00737313545854019) 
+10) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+11) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+
+
+PATH #23: Here are the 11 nearby places to visit. Total Distance Cost: 0.902220468970791
+------------------------------------------------------------------------------------------------------------------------
+1) From Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  go to Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  (Distance:0.197676660449354) 
+2) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.111370162101433) 
+3) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+4) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.039755376994822) 
+5) From Sunset Beach [Pupukea, HI 96712]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.11333313349735) 
+6) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+7) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  (Distance:0.147002687543465) 
+8) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.153664268924824) 
+9) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+10) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+11) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+
+
+PATH #24: Here are the 11 nearby places to visit. Total Distance Cost: 0.721321136199562
+------------------------------------------------------------------------------------------------------------------------
+1) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.111370162101433) 
+2) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+3) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.039755376994822) 
+4) From Sunset Beach [Pupukea, HI 96712]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.11333313349735) 
+5) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+6) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  (Distance:0.147002687543465) 
+7) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.153664268924824) 
+8) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+9) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+10) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+11) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+
+
+PATH #25: Here are the 11 nearby places to visit. Total Distance Cost: 0.716735931906826
+------------------------------------------------------------------------------------------------------------------------
+1) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.0111955357142845) 
+2) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.11333313349735) 
+3) From Sunset Beach [Pupukea, HI 96712]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.039755376994822) 
+4) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+5) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  (Distance:0.111370162101433) 
+6) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  (Distance:0.197676660449354) 
+7) From Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.230452176835254) 
+8) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00737313545854019) 
+9) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+10) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+
+
+PATH #26: Here are the 11 nearby places to visit. Total Distance Cost: 0.727447842425735
+------------------------------------------------------------------------------------------------------------------------
+1) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+2) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.124045044016259) 
+3) From Sunset Beach [Pupukea, HI 96712]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.039755376994822) 
+4) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+5) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  (Distance:0.111370162101433) 
+6) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  (Distance:0.197676660449354) 
+7) From Wet'n'Wild Hawaii [400 Farrington Hwy, Kapolei, HI 96707]  go to Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  (Distance:0.230452176835254) 
+8) From Foster Botanical Garden [180 N Vineyard Blvd, Honolulu, HI 96817]  go to Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  (Distance:0.00737313545854019) 
+9) From Hawaii State Art Museum [250 S Hotel St, Honolulu, HI 96813]  go to Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  (Distance:0.00183682428663558) 
+10) From Hawaii State Capitol [415 S Beretania St, Honolulu, HI 96813]  go to ʻIolani Palace [364 S King St, Honolulu, HI 96813]  (Distance:0.00138812782191694) 
+11) From ʻIolani Palace [364 S King St, Honolulu, HI 96813]  go to Kawaiahao Church and Mission Houses [957 Punchbowl St, Honolulu, HI 96813]  (Distance:0.00235479874723564) 
+
+
+PATH #27: Here are the 11 nearby places to visit. Total Distance Cost: 0.637905963383947
+------------------------------------------------------------------------------------------------------------------------
+1) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0) 
+2) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.039755376994822) 
+3) From Sunset Beach [Pupukea, HI 96712]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.11333313349735) 
+4) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+5) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  (Distance:0.147002687543465) 
+6) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.153664268924824) 
+7) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+8) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+9) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+11) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+
+
+PATH #28: Here are the 11 nearby places to visit. Total Distance Cost: 0.637905963383947
+------------------------------------------------------------------------------------------------------------------------
+1) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+2) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Sunset Beach [Pupukea, HI 96712]  (Distance:0.039755376994822) 
+3) From Sunset Beach [Pupukea, HI 96712]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.11333313349735) 
+4) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+5) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  (Distance:0.147002687543465) 
+6) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.153664268924824) 
+7) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+8) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+9) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+10) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+11) From Tantalus [Honolulu, HI 96822]  go to The Contemporary Museum, Honolulu [2411 Makiki Heights Dr, Honolulu, HI 96822]  (Distance:0.0279549892858181) 
+
+
+PATH #29: Here are the 11 nearby places to visit. Total Distance Cost: 0.769642789189009
+------------------------------------------------------------------------------------------------------------------------
+1) From Sunset Beach [Pupukea, HI 96712]  go to Aliiolani Hale [417 S King St, Honolulu, HI 96813]  (Distance:0.039755376994822) 
+2) From Aliiolani Hale [417 S King St, Honolulu, HI 96813]  go to Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  (Distance:0) 
+3) From Waimea Falls [59-864 Kamehameha Hwy, Haleiwa, HI 96712]  go to Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  (Distance:0.111370162101433) 
+4) From Dole Plantation [64-1550 Kamehameha Hwy, Wahiawa, HI 96786]  go to Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  (Distance:0.161654786486796) 
+5) From Laie Hawaii Temple [55-600 Naniloa Loop, Laie, HI 96762]  go to Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  (Distance:0.0111955357142845) 
+6) From Polynesian Cultural Center [55-370 Kamehameha Hwy, Laie, HI 96762]  go to Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  (Distance:0.147002687543465) 
+7) From Kualoa Ranch [49-560 Kamehameha Hwy, Kaneohe, HI 96744]  go to Lanikai Beach [Kailua, HI 96734]  (Distance:0.153664268924824) 
+8) From Lanikai Beach [Kailua, HI 96734]  go to Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  (Distance:0.0182135835696869) 
+9) From Kailua Beach Park [526 Kawailoa Rd, Kailua, HI 96734]  go to Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  (Distance:0.0750141810641925) 
+10) From Nu‘uanu Pali Lookout [Nuuanu Pali Drive, Kaneohe, HI 96744]  go to Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  (Distance:0.0349948791113796) 
+11) From Lyon Arboretum [3860 Manoa Rd, Honolulu, HI 96822]  go to Tantalus [Honolulu, HI 96822]  (Distance:0.0167773276781248) 
+

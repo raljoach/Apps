@@ -1,0 +1,14 @@
+- INPUT: {Null,SLD,NonBlank,NonBlank,NonBlank,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Blank,Null,Blank,Null,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Null,ACT,Null,Blank,Blank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {NonBlank,Null,Blank,Blank,Blank,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {NonBlank,SLD,NonBlank,Null,Blank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {NonBlank,ACT,NonBlank,NonBlank,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Blank,SLD,Null,NonBlank,Blank,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Blank,Null,NonBlank,Blank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Null,ACT,Blank,Null,NonBlank,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {NonBlank,SLD,Null,Blank,Null,NonBlank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Blank,ACT,Null,Null,Null,Null} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {NonBlank,SLD,Blank,NonBlank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Null,Null,Null,NonBlank,NonBlank,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 
+- INPUT: {Null,SLD,Null,Blank,Null,Blank} Call(MlsNumber,Status,PostalCode,Address,City,CloseDate) => null 

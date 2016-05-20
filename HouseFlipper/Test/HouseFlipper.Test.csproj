@@ -7,8 +7,8 @@
     <ProjectGuid>{74D2134B-1C2E-439A-A488-E476E007E2CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test</RootNamespace>
-    <AssemblyName>Test</AssemblyName>
+    <RootNamespace>HouseFlipper.Test</RootNamespace>
+    <AssemblyName>HouseFlipper.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,22 +44,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Column.cs" />
-    <Compile Include="DataFolder.cs" />
     <Compile Include="Demo.cs" />
+    <Compile Include="FolderPath.cs" />
     <Compile Include="Grid.cs" />
-    <Compile Include="Input.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="TestInput.cs" />
+    <Compile Include="TestFactories.cs" />
+    <Compile Include="TestParameters.cs" />
+    <Compile Include="TestHarnesses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prototype.cs" />
-    <Compile Include="Result.cs" />
+    <Compile Include="TestStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WeekendAway\Common\Common.csproj">
-      <Project>{27e605de-ea8e-47c9-a2bd-6b0ee30f64f9}</Project>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{f64795c7-e6c5-491a-b049-28f4ed77bff9}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StateMachine\Automata.csproj">
+      <Project>{8aa5b836-1f39-4947-925c-568319f7e975}</Project>
+      <Name>Automata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\Common\Test.Common.csproj">
+      <Project>{1f93af1f-4df0-4f95-804a-792d7880f0c8}</Project>
+      <Name>Test.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\Harness\Test.Harness.csproj">
+      <Project>{cfeee781-c5b6-4e82-8342-2c2e4be99da6}</Project>
+      <Name>Test.Harness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ModelBased\EcoSystem\Test.ModelBased.System.csproj">
+      <Project>{84327279-51f4-475e-a976-d4ebe4ea863a}</Project>
+      <Name>Test.ModelBased.System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Test\ModelBased\Test.ModelBased.csproj">
+      <Project>{11093fb9-a2ce-4031-b33f-be5132a6f1ca}</Project>
+      <Name>Test.ModelBased</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

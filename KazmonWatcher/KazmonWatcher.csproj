@@ -57,7 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Prototype\Config.cs" />
+    <Compile Include="Prototype\Counter.cs" />
+    <Compile Include="Prototype\CounterInstance.cs" />
+    <Compile Include="Prototype\Creds.cs" />
+    <Compile Include="Prototype\_Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Result.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

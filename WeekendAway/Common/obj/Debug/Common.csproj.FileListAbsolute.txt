@@ -2,4 +2,6 @@ C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\bin\Debug\Common.pdb
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\obj\Debug\Common.dll
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\obj\Debug\Common.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\bin\Debug\WebDriver.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\bin\Debug\WebDriver.xml
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\WeekendAway\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

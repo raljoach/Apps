@@ -19,16 +19,16 @@ namespace RandomQuestionAsker
             var companies = new List<string>();
             var keywords = new List<string>();
             var tags = new List<string>();
-            if(args!=null && args.Length>0)
+            if (args != null && args.Length > 0)
             {
-                for(int j=0; j<args.Length; j++)
+                for (int j = 0; j < args.Length; j++)
                 {
                     var flag = args[j].ToLower();
-                    if(flag.StartsWith("-"))
+                    if (flag.StartsWith("-"))
                     {
                         flag = flag.Substring(1);
                     }
-                    switch(flag)
+                    switch (flag)
                     {
                         case "topic":
                             ++j;
@@ -78,14 +78,14 @@ namespace RandomQuestionAsker
         {
             int numIndexes = 0;
             var indexMap = new Dictionary<IndexType, Dictionary<string, List<Question>>>();
-            bool noRestrictions = topics.Count==0 && companies.Count==0 && keywords.Count==0 && tags.Count==0;
+            bool noRestrictions = topics.Count == 0 && companies.Count == 0 && keywords.Count == 0 && tags.Count == 0;
 
             if (index.TopicIndex.Count > 0)
             {
                 if (noRestrictions || topics.Count > 0)
                 {
                     ++numIndexes;
-                    indexMap.Add(IndexType.Topic,index.TopicIndex);
+                    indexMap.Add(IndexType.Topic, index.TopicIndex);
                 }
             }
             if (index.KeywordIndex.Count > 0)
@@ -119,39 +119,14 @@ namespace RandomQuestionAsker
             Logger.Debug("Random seed: {0}", seed);
             if (numIndexes > 0)
             {
-                var choice = random.Next(numIndexes);
-                var iType = indexMap.Keys.ToArray()[choice];
-                var cIndex = indexMap[iType];
-
-                Question q;
-                if (noRestrictions)
-                {
-                    var numK = cIndex.Keys.Count;
-                    choice = random.Next(numK);
-                    var k = cIndex.Keys.ToArray()[choice];
-
-                    var qList = cIndex[k];
-                    var numQ = qList.Count;
-                    choice = random.Next(numQ);
-                    q = qList[choice];
-                }
-                else
-                {
-                    switch(iType)
-                    {
-                        case IndexType.Company:
-                            break;
-                        default:
-                            throw new InvalidOperationException(string.Format("Error: Unhandled index type: {0}", iType));
-                    }
-                }
-
                 while (true)
-                {
+                {                    
                     Logger.Debug("Ready for a question? Hit enter to continue or q to quit.");
                     var key = Console.ReadKey().KeyChar;
                     if (key == 'q' || key == 'Q') { break; }
                     Logger.Border();
+                    Logger.Debug("Finding a question...");
+                    Question q = SelectRandomQuestion(numIndexes, indexMap, noRestrictions, random);
                     Logger.Debug("Here's your question:");
                     Logger.Border();
                     Logger.Debug(q.Text);
@@ -174,6 +149,39 @@ namespace RandomQuestionAsker
                     //Buzzer sounds!   
                 }
             }
+        }
+
+        private static Question SelectRandomQuestion(int numIndexes, Dictionary<IndexType, Dictionary<string, List<Question>>> indexMap, bool noRestrictions, Random random)
+        {
+            Question q = null;
+            var choice = random.Next(numIndexes);
+            var iType = indexMap.Keys.ToArray()[choice];
+            var cIndex = indexMap[iType];
+
+
+            if (noRestrictions)
+            {
+                var numK = cIndex.Keys.Count;
+                choice = random.Next(numK);
+                var k = cIndex.Keys.ToArray()[choice];
+
+                var qList = cIndex[k];
+                var numQ = qList.Count;
+                choice = random.Next(numQ);
+                q = qList[choice];
+            }
+            else
+            {
+                switch (iType)
+                {
+                    case IndexType.Company:
+                        break;
+                    default:
+                        throw new InvalidOperationException(string.Format("Error: Unhandled index type: {0}", iType));
+                }
+            }
+
+            return q;
         }
 
         private static Index BuildIndexes(string file)
@@ -211,7 +219,7 @@ namespace RandomQuestionAsker
         {
             if (key == null) return;
             List<Question> list;
-            if(index.ContainsKey(key))
+            if (index.ContainsKey(key))
             {
                 list = index[key];
             }
@@ -220,12 +228,12 @@ namespace RandomQuestionAsker
                 list = new List<Question>();
                 index.Add(key, list);
             }
-            list.Add(q);            
+            list.Add(q);
         }
 
         private static void AddToIndex(Dictionary<string, List<Question>> index, List<string> keys, Question q)
         {
-            foreach(var k in keys)
+            foreach (var k in keys)
             {
                 AddToIndex(index, k, q);
             }
