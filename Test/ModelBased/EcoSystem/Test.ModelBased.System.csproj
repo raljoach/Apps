@@ -47,7 +47,7 @@
     <Compile Include="Tester.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\StateMachine\Automata.csproj">
+    <ProjectReference Include="..\..\..\Automata\Automata.csproj">
       <Project>{8aa5b836-1f39-4947-925c-568319f7e975}</Project>
       <Name>Automata</Name>
     </ProjectReference>

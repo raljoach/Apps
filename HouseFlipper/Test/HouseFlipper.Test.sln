@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseFlipper.Test", "HouseFlipper.Test.csproj", "{74D2134B-1C2E-439A-A488-E476E007E2CF}"
 EndProject
@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Harness", "..\..\Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ModelBased", "..\..\Test\ModelBased\Test.ModelBased.csproj", "{11093FB9-A2CE-4031-B33F-BE5132A6F1CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automata", "..\..\StateMachine\Automata.csproj", "{8AA5B836-1F39-4947-925C-568319F7E975}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseFlipper.Test.Toolkit", "Toolkit\HouseFlipper.Test.Toolkit.csproj", "{922ED62B-B215-426A-8002-B9729C3AEAB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Generator", "..\..\Test\UnitTests\Generator\UnitTests.Generator.csproj", "{235D5A74-C18F-412C-8A88-45714B8C27E9}"
@@ -30,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBased.Generator", "..\..\Test\ModelBased\Properties\Generator\ModelBased.Generator.csproj", "{CA2D6954-10FA-47FD-B8ED-40F654B84D8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseFlipper.UnitTests", "..\UnitTests\HouseFlipper.UnitTests.csproj", "{87FC5ABF-3914-4951-A56B-C491D9E77138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automata", "..\..\Automata\Automata.csproj", "{8AA5B836-1F39-4947-925C-568319F7E975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,10 +57,6 @@ Global
 		{11093FB9-A2CE-4031-B33F-BE5132A6F1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11093FB9-A2CE-4031-B33F-BE5132A6F1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11093FB9-A2CE-4031-B33F-BE5132A6F1CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AA5B836-1F39-4947-925C-568319F7E975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AA5B836-1F39-4947-925C-568319F7E975}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AA5B836-1F39-4947-925C-568319F7E975}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AA5B836-1F39-4947-925C-568319F7E975}.Release|Any CPU.Build.0 = Release|Any CPU
 		{922ED62B-B215-426A-8002-B9729C3AEAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{922ED62B-B215-426A-8002-B9729C3AEAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922ED62B-B215-426A-8002-B9729C3AEAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +77,10 @@ Global
 		{87FC5ABF-3914-4951-A56B-C491D9E77138}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87FC5ABF-3914-4951-A56B-C491D9E77138}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87FC5ABF-3914-4951-A56B-C491D9E77138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA5B836-1F39-4947-925C-568319F7E975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA5B836-1F39-4947-925C-568319F7E975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA5B836-1F39-4947-925C-568319F7E975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA5B836-1F39-4947-925C-568319F7E975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,9 +91,9 @@ Global
 		{1F93AF1F-4DF0-4F95-804A-792D7880F0C8} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
 		{CFEEE781-C5B6-4E82-8342-2C2E4BE99DA6} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
 		{11093FB9-A2CE-4031-B33F-BE5132A6F1CA} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
-		{8AA5B836-1F39-4947-925C-568319F7E975} = {100A69B8-9642-4D4F-A52C-3F29E78B00FB}
 		{235D5A74-C18F-412C-8A88-45714B8C27E9} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
 		{84327279-51F4-475E-A976-D4EBE4EA863A} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
 		{CA2D6954-10FA-47FD-B8ED-40F654B84D8E} = {50962BCB-3FD8-45D2-9759-A1B9191B34B8}
+		{8AA5B836-1F39-4947-925C-568319F7E975} = {100A69B8-9642-4D4F-A52C-3F29E78B00FB}
 	EndGlobalSection
 EndGlobal
