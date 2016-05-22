@@ -18,7 +18,7 @@ namespace HouseFlipper.Test
 
         public override Result Run()
         {
-            Prototype p = new Prototype(this.DataFolderPath);
+            Program p = new Program(this.DataFolderPath);
             p.Timeout = Input.Timeout;
             Result r = p.Run();
             return r;

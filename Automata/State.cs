@@ -8,21 +8,23 @@ namespace Automata
 {
     public class State
     {
-        Parameter[] _parameters;
+        IParameter[] _parameters;
         Transition[] _transitions;
-        public State(Parameter[] parameters)
+        public State(IParameter[] parameters)
         {
             _parameters = parameters;//new Parameters(parameters);
         }
 
         public State(State state) : this(state.Parameters)
-        {
-
+        {            
+            this.IsStart = state.IsStart;
+            this.Transitions = state.Transitions;
+            this.StateMachine = state.StateMachine;
         }
 
-        public bool IsStart { get; internal set; }
+        public bool IsStart { get; set; }
 
-        public Parameter[] Parameters
+        public IParameter[] Parameters
         {
             get { return _parameters; }
             set { _parameters = value; }
@@ -37,7 +39,7 @@ namespace Automata
         }
     }
 
-    public class Parameter
+    public interface IParameter
     {
 
     }

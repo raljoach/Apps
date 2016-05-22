@@ -26,10 +26,5 @@ namespace Test.ModelBased
         }
 
         public Driver Driver { get; internal set; }
-
-        private void HandleStateChange()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

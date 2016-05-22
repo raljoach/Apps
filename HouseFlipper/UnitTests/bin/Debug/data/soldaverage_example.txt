@@ -1,0 +1,10 @@
+House #1 in zip 98024 sold for $60,000 in January 2016, sold again for $120,000 in May 2016.
+    House #2 in zip 98024 sold for $70,000 in Feb 2016, sold again for $80,000 in Nov 2016
+    House #3 in zip 99341 sold for $70,000.
+
+    Zip code: 98024
+    Average price prior to flip: $65,000
+    Average price after flip: $100,000
+
+    Zip code: 99341
+    0 flipped houses

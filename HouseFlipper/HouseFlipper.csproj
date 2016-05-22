@@ -112,8 +112,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WeekendAway\Common\Common.csproj">
-      <Project>{27e605de-ea8e-47c9-a2bd-6b0ee30f64f9}</Project>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{f64795c7-e6c5-491a-b049-28f4ed77bff9}</Project>
       <Name>Common</Name>
     </ProjectReference>
     <ProjectReference Include="Common\HouseFlipper.Common.csproj">

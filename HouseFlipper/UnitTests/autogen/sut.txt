@@ -1,0 +1,11 @@
+﻿op:MlsRow
+parameters:MlsNumber mlsNum, PostalCode postalCode, Address address, City city
+details:
+- MlsNumber: (String) Null, Blank, NonBlank
+- Status: (String) Null, ACT, SLD
+- PostalCode: (String) Null, Blank, NonBlank
+- Address: (String) Null, Blank, NonBlank
+- City: (String) Null, Blank, NonBlank
+- CloseDate: (DateTime) Null, Blank, NonBlank
+
+//op:MlsSummary:AddRow

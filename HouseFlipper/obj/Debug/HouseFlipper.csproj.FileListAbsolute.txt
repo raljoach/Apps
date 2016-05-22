@@ -8,3 +8,5 @@ C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\De
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\obj\Debug\HouseFlipper.exe
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\obj\Debug\HouseFlipper.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Common.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\bin\Debug\Common.pdb

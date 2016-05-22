@@ -1,17 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll" total="0" errors="0" failures="0" not-run="6" inconclusive="0" ignored="6" skipped="0" invalid="0" date="2016-05-19" time="23:31:45">
+<test-results name="C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll" total="1" errors="0" failures="1" not-run="10" inconclusive="0" ignored="10" skipped="0" invalid="0" date="2016-05-20" time="17:04:43">
   <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\docusign_source\Core\Extras\tools\NUnit_2.6.2\bin" machine-name="DSW003153" user="ralph.joachim" user-domain="DOCUSIGNHQ" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll" executed="True" result="Inconclusive" success="False" time="0.175" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\bin\Debug\HouseFlipper.UnitTests.dll" executed="True" result="Failure" success="False" time="0.240" asserts="0">
     <results>
-      <test-suite type="Namespace" name="HouseFlipper" executed="True" result="Inconclusive" success="False" time="0.175" asserts="0">
+      <test-suite type="Namespace" name="HouseFlipper" executed="True" result="Failure" success="False" time="0.230" asserts="0">
         <results>
-          <test-suite type="Namespace" name="UnitTests" executed="True" result="Inconclusive" success="False" time="0.175" asserts="0">
+          <test-suite type="Namespace" name="UnitTests" executed="True" result="Failure" success="False" time="0.230" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="MlsSummaryTest" executed="True" result="Inconclusive" success="False" time="0.174" asserts="0">
+              <test-suite type="TestFixture" name="MlsSummaryTest" executed="True" result="Failure" success="False" time="0.200" asserts="0">
                 <results>
-                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldCount___Example" executed="False" result="Ignored">
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage___Example" executed="True" result="Failure" success="False" time="0.120" asserts="0">
+                    <failure>
+                      <message><![CDATA[  Expected: <
+			PostalCode: 99341
+			BeforePrice: 0
+			BeforeSqft: 0
+			BeforeBeds: 0
+			BeforeBaths: 0
+
+			AfterPrice:	0
+			AfterSqft:	0
+			AfterBeds:	0
+			AfterBaths:	0
+			Count: 1>
+  But was:  <
+			PostalCode: 99341
+			BeforePrice: 70000
+			BeforeSqft: 0
+			BeforeBeds: 0
+			BeforeBaths: 0
+
+			AfterPrice:	0
+			AfterSqft:	0
+			AfterBeds:	0
+			AfterBaths:	0
+			Count: 1>
+]]></message>
+                      <stack-trace><![CDATA[at HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage___Example() in C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\HouseFlipper\UnitTests\MlsSummaryTest.cs:line 242
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage___Simple" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage__Error" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage_Boundary" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage_Large" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="HouseFlipper.UnitTests.MlsSummaryTest.SoldAverage_Unique" executed="False" result="Ignored">
                     <reason>
                       <message><![CDATA[]]></message>
                     </reason>

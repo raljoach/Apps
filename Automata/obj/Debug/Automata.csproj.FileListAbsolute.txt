@@ -3,3 +3,8 @@ C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\StateMachine\bin\De
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\StateMachine\obj\Debug\Automata.csprojResolveAssemblyReference.cache
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\StateMachine\obj\Debug\Automata.dll
 C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\StateMachine\obj\Debug\Automata.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Automata\bin\Debug\Automata.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Automata\bin\Debug\Automata.pdb
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Automata\obj\Debug\Automata.csprojResolveAssemblyReference.cache
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Automata\obj\Debug\Automata.dll
+C:\Users\ralph.joachim\Documents\Visual Studio 2015\Projects\Automata\obj\Debug\Automata.pdb
