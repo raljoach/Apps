@@ -8,7 +8,7 @@ namespace HouseFlipper.Test
 {
     public class TestStrategy
     {
-        public static void Main(string[] args)
+        public static void _Main(string[] args)
         {
             new CommandLineHarness().Run();
         }

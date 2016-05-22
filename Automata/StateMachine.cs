@@ -9,15 +9,15 @@ namespace Automata
 {
     public class StateMachine : Automata
     {
-        //private Driver _driver;
+        public event Action<State> StateChanged;
+
         public StateMachine(State[] states/*, Driver driver*/)
         {
-            //_driver = driver;
             State startState = null;
             foreach (var s in states)
             {
                 s.StateMachine = this;
-                //s.Driver = _driver;
+
                 if (s.IsStart)
                 {
                     startState = s;

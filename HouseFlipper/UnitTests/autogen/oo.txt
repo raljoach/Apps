@@ -59,47 +59,12 @@ Details:
 	-D:Boundary
 -------------------------------------------
 //TEST CLASS:
-Noun: X:CryptoModule
-Verb: V:Encrypt
-Signature: byte[] Encrypt(byte[] plainBytes)
-Return: byte[]
+Noun: X:MlsSummary
+Verb: V:SoldCount
 Details:
-- plainText: string
-- plainBytes: plain text converted to byte form (Encoding.ConverToBytes(plainText))
-- byte[]: cipherText converted to byte form
--D:Example
--D:Simple
-   - INPUT: {NotEmpty} Call(plainBytes) => {Bytes:NotEmpty, Cache Hit | Cache Miss, No Match: Using C: drive, Using MTSA, Encrypt-Bytes-WithDPU}
--D:Error
-   - INPUT: {Null} Call(plainBytes) => {Exception:PlainText bytes cannot be null}
-   - INPUT: {ZeroLength} Call(plainBytes) => {Exception:PlainText bytes cannot be zero-length}
--D:Boundary
--D:Large
--D:Unique
-
--------------------------------------------
-//TEST CLASS:
-Noun: X:CryptoModule
-Verb: V:GetKeyFromObjectUsingMTSA
-Signature: byte[] GetKeyFromObjectUsingMTSA(Guid objectId, KeyId encryptionKeyId, Direction direction, out int newEncryptionKeyId)
-Return: byte[]
-Details:
-- objectId: item associated with a particular key id, i.e. id of an envelope, tag, document, page,
-- encryptionKeyId: key type => -1: assign => random key, 0: DPU, >=1 a specific key to use
-                               Special combos:
-                               *-1 && decrypt => retrieve SQL key request (Safe guard? send back DPU key instead, so that GetKeyWithoutMTSA returns string.Empty when it tries to encrypt/decrypt with DPU key?)
-							   *0 && decrypt => retrieve DPU key
-							   *0 && encrypt => use DPU key to encrypt (Safe guard? Assign a different key to use to encrypt)
-							   *-1 && encypt => assign a different key to encrypt
-							   * 1 && encrypt => use key 1 to encrypt: Logic Error Exception: Invalid:  GetKey is not to be used to specify a key to use for encryption.we can't specify what key to use, key manager arbitrarily selects one for use
-							   * >1 && encrypt => use key x to encrypt: Logic Error Exception: Invalid: GetKey is not to be used to specify a key to use for encryption. we can't specify what key to use, key manager arbitrarily selects one for use
-							   
-- plainBytes: plain text converted to byte form (Encoding.ConverToBytes(plainText))
-- byte[]: cipherText converted to byte form
 -D:Example
 -D:Simple
 -D:Error
-   - INPUT: {NotEmpty,1,encrypt} Call(Guid objectId, KeyId encryptionKeyId, Direction direction, out int newEncryptionKeyId) => {Exception: we can't specify what key to use, key manager arbitrarily selects one for use}
--D:Boundary
--D:Large
 -D:Unique
+-D:Boundary
+-D:Big
