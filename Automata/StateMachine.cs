@@ -10,10 +10,11 @@ namespace Automata
     public class StateMachine : Automata
     {
         public event Action<State> StateChanged;
+        private State state;
+        private State startState;
 
-        public StateMachine(State[] states/*, Driver driver*/)
+        public StateMachine(State[] states)
         {
-            State startState = null;
             foreach (var s in states)
             {
                 s.StateMachine = this;
@@ -28,33 +29,28 @@ namespace Automata
         }
 
 
-        public virtual State Current { get { return this.state; } set { this.state = value; } }
-    }
-    /*
-    public class States : IEnumerable
-    {
-        private State[] _states;
-        public States(State[] stateArray)
+        public State Current
         {
-            _states = new State[stateArray.Length];
-
-            for (int i = 0; i < stateArray.Length; i++)
+            get { return this.state; }
+            set
             {
-                _states[i] = stateArray[i];
+                this.state = value;
+                StateChanged?.Invoke(this.Current);
             }
         }
 
-        // Implementation for the GetEnumerator method.
-        IEnumerator IEnumerable.GetEnumerator()
+        public override void Run()
         {
-            return (IEnumerator)GetEnumerator();
+            Transition trans = null;
+            while ((trans = state.Next()) != null)
+            {
+                state.Execute(trans);
+            }
         }
 
-        public StateMachine GetEnumerator()
+        public void Reset()
         {
-            return new StateMachine(_states);
+            Current = startState;
         }
     }
-    */
-
 }
