@@ -69,6 +69,43 @@ namespace HouseFlipper.Test.ProtoTypeCode
             }
             return new Result(output, error);
         }
+
+        public void SetArguments(List<Parameter> parameters)
+        {
+            var arguments = string.Empty;
+            var isFirst = true;
+            foreach (var parameter in parameters)
+            {
+                if (isFirst) { isFirst = false; }
+                else
+                {
+                    arguments += " ";
+                }
+                var argName = parameter.Name;
+                var argVal = parameter.Value;
+                var argStr = string.Format("-{0} {1}", argName, argVal);
+                arguments += argStr;
+            }
+            this.Arguments = arguments;
+        }
+        public void SetCreateArguments(List<IParameter> parameters)
+        {
+            var arguments = string.Empty;
+            var isFirst = true;
+            foreach (Parameter parameter in parameters)
+            {
+                if (isFirst) { isFirst = false; }
+                else
+                {
+                    arguments += " ";
+                }
+                var argName = parameter.Name;
+                var argVal = parameter.Value;
+                var argStr = string.Format("-{0} {1}", argName, argVal);
+                arguments += argStr;
+            }
+            this.Arguments = arguments;
+        }
     }
     public class Parameter : IParameter
     {
@@ -448,6 +485,106 @@ namespace HouseFlipper.Test.ProtoTypeCode
         }
     }
 
+    public interface IUnitTestDriver
+    {
+
+    }
+
+    public interface IUnitTester
+    {
+
+    }
+
+    public class UnitTestHarness
+    {
+        private IUnitTester tester;
+
+        public UnitTestHarness(IUnitTester tester)
+        {
+            this.tester = tester;
+        }
+
+        public void Run()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public interface IExploratoryTester
+    {
+
+    }
+    public class ExploratoryHarness
+    {
+        private Tester tester;
+
+        public ExploratoryHarness(Tester tester)
+        {
+            this.tester = tester;
+        }
+
+        internal void Run()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public interface IChaosActionTester
+    {
+
+    }
+    public class ChaosActionHarness
+    {
+        private IChaosActionTester tester;
+
+        public ChaosActionHarness(IChaosActionTester tester)
+        {
+            this.tester = tester;
+        }
+
+        internal void Run()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public interface IChaosStateTester
+    {
+
+    }
+    public class ChaosStateHarness
+    {
+        private IChaosStateTester tester;
+
+        public ChaosStateHarness(IChaosStateTester tester)
+        {
+            this.tester = tester;
+        }
+
+        internal void Run()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public interface IChaosSystemTester
+    {
+
+    }
+    public class ChaosSystemHarness
+    {
+        private IChaosSystemTester tester;
+
+        public ChaosSystemHarness(IChaosSystemTester tester)
+        {
+            this.tester = tester;
+        }
+
+        internal void Run()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class TestException : Exception
     {
         public TestException(string exMsg) : base(exMsg) { }
@@ -456,7 +593,7 @@ namespace HouseFlipper.Test.ProtoTypeCode
 
         }
     }
-    public class Tester : IParameterTester, IRegressionTester, IStateBasedTester//, Driver
+    public class Tester : IParameterTester, IRegressionTester, IStateBasedTester, ITransitionDriver, IUnitTester, IUnitTestDriver, IExploratoryTester, IChaosActionTester, IChaosStateTester, IChaosSystemTester
     {
         private Program program;
 
@@ -468,6 +605,9 @@ namespace HouseFlipper.Test.ProtoTypeCode
                 RunIt();
                 BeatItUp();
                 AnalyzeIt();
+                UnitTestIt();
+                Explore();
+                Chaos();
             }
             catch (TestException te)
             {
@@ -476,10 +616,11 @@ namespace HouseFlipper.Test.ProtoTypeCode
         }
         private void RunIt()
         {
+            //no data setup
             var response = program.Run();
             if (!string.IsNullOrWhiteSpace(response.Error))
             {
-                throw new TestException(string.Format("Error: Program failed to run - '{0}'", response.Error));
+                throw new TestException(string.Format("Error: HouseFlipper.exe failed during run - '{0}'", response.Error));
             }
         }
 
@@ -494,6 +635,23 @@ namespace HouseFlipper.Test.ProtoTypeCode
             new StateBasedHarness(this).Run();
         }
 
+        private void UnitTestIt()
+        {
+            new UnitTestHarness(this).Run();
+        }
+
+        private void Explore()
+        {
+            new ExploratoryHarness(this).Run();
+        }
+
+        private void Chaos()
+        {
+            new ChaosActionHarness(this).Run();
+            new ChaosStateHarness(this).Run();
+            new ChaosSystemHarness(this).Run();
+        }
+
         ParameterGroup IParameterTester.GetParameters()
         {
             return new ParameterGroup(typeof(DataFolder), typeof(Files), typeof(FileCount), typeof(HeaderCount), typeof(DataRowCount));
@@ -501,27 +659,13 @@ namespace HouseFlipper.Test.ProtoTypeCode
 
         void IParameterTester.Run(List<Parameter> parameters)
         {
-            program.Arguments = CreateArguments(parameters);
-        }
-
-        private static string CreateArguments(List<Parameter> parameters)
-        {
-            var arguments = string.Empty;
-            var isFirst = true;
-            foreach (var parameter in parameters)
+            DataSetup(parameters.ToArray());
+            var response = program.Run();
+            if (!string.IsNullOrWhiteSpace(response.Error))
             {
-                if (isFirst) { isFirst = false; }
-                else
-                {
-                    arguments += " ";
-                }
-                var argName = parameter.Name;
-                var argVal = parameter.Value;
-                var argStr = string.Format("-{0} {1}", argName, argVal);
-                arguments += argStr;
+                throw new TestException(string.Format("Error: HouseFlipper.exe failed during run - '{0}'", response.Error));
             }
-            return arguments;
-        }
+        }        
 
         IEnumerable<Test> IRegressionTester.GetTests()
         {
@@ -542,7 +686,7 @@ namespace HouseFlipper.Test.ProtoTypeCode
                 step.Action =
                     () =>
                     {
-                        program.Arguments = CreateArguments(step.Arguments);
+                        DataSetup(step.Arguments.ToArray());                        
                         result = program.Run();
                     };
                 Logger.Debug("{0}. {1}", step);
@@ -572,78 +716,143 @@ namespace HouseFlipper.Test.ProtoTypeCode
         {
             get
             {
-                var states = CreateStates();
-                var stateMachine = new TestMachine(states.ToArray(), /*this*/new Demo());
-
-                /*
-                TestState[] states = new TestState[]
-                {
-                    //new State();
-                };
-                var stateMachine = new TestMachine(states, this);
-                */
-
+                TestMachine stateMachine = DataMachine();
                 return stateMachine;
             }
         }
 
-        /*
-        public override Result Run()
+        private TestMachine DataMachine()
         {
-            return program.Run();
+            var states = DataStates();
+            var stateMachine = new TestMachine(states.ToArray(), this);
+            stateMachine.StateChanged += DataSetup;
+            return stateMachine;
         }
-        
 
-        private TestInput Input;
-        public override void SetUp(Input input)
-        {
-            this.Input = (TestInput)input;
-            FolderPath folderPath = new DataFolderFactory().Create(Input.DataFolder);
-            if (folderPath == null) { DataFolderPath = null; }
-            else
-            {
-                DataFolderPath = folderPath.Quoted;
-            }
-
-            var files = Input.Files;
-            new FilesFactory().Create(folderPath, files);
-
-            var filesCount = Input.FileCount;
-            new FilesCountFactory().Create(folderPath, filesCount);
-
-            var headerCount = Input.HeaderCount;
-            new HeaderCountFactory().Create(folderPath, headerCount);
-
-            var dataRowCount = Input.DataRowCount;
-            new DataRowCountFactory().Create(dataRowCount);
-        }
-        */
-
-        private List<TestState> CreateStates()
+        private List<TestState> DataStates()
         {
             var states = new List<TestState>();
-            var table = CreateModel();
+            var table = DataModel();
+            TestState prev = null;
+            var regressionTable = DefineTests();
             foreach (var row in table)
             {
-                var parameters = row.ToArray();
-                var state = new State(parameters.ToArray());
-                states.Add(new TestState(state));
+                var next = new TestState(row.ToArray(), new Transition[] { }, this);
+                SetExpectedResult(regressionTable, next);
+                states.Add(next);
+                if(prev!=null)
+                {
+                    prev.Transitions = new Transition[1] { new Transition() };
+                    prev.Transitions[0].End = next;
+                }
+
+                prev = next;
             }
             states[0].IsStart = true;
             return states;
         }
 
-        private ParameterTable CreateModel()
+        private void SetExpectedResult(TestTable table, TestState state)
         {
-            var stateParams = ((IParameterTester)this).GetParameters();
-            return CreateModel(stateParams);
+            bool match = false;
+            foreach (var row in table)
+            {
+                foreach(var expectation in row)
+                {
+                    var allArgsMatch = true;              
+                    for(var k=0; k<expectation.Arguments.Count; k++)
+                    {
+                        var thisArg = expectation.Arguments[k];
+                        var thatArg = (Parameter)state.Parameters[k];
+                        var unused = thisArg.Value.ToLower().Trim().Equals("unusedparameter");
+                        if ( !unused &&  thisArg.EnumValue != thatArg.EnumValue)
+                        {
+                            allArgsMatch = false;
+                            break;
+                        }
+                    }
+
+                    if(allArgsMatch)
+                    {
+                        state.Expectation = expectation.Result;
+                        match = true;
+                        break;
+                    }
+                }
+                if(match)
+                {
+                    break;
+                }
+            }
         }
 
-        private ParameterTable CreateModel(ParameterGroup signature)
+        private ParameterTable DataModel()
         {
-            var model = new ParameterModel(signature);
+            var stateParams = ((IParameterTester)this).GetParameters();
+            var model = new ParameterModel(stateParams);
             var table = model.CreateTable();
             return table;
+        }
+        
+        void DataSetup(State newDataState)
+        {
+            var parameters = newDataState.Parameters;
+            DataSetup(parameters);
+        }
+
+        private void DataSetup(IParameter[] parameters)
+        {
+            FolderPath folderPath = null;
+            foreach (Parameter parameter in parameters)
+            {
+                if (parameter.EnumValue is DataFolder)
+                {
+                    folderPath = new DataFolderFactory().Create((DataFolder)parameter.EnumValue);
+                    if (folderPath == null) { program.Arguments = null; }
+                    else
+                    {
+                        program.Arguments = folderPath.Quoted;
+                    }
+                }
+                else if (parameter.EnumValue is Files)
+                {
+                    var files = (Files)parameter.EnumValue;
+                    new FilesFactory().Create(folderPath, files);
+                }
+                else if (parameter.EnumValue is FileCount)
+                {
+                    var filesCount = (FileCount)parameter.EnumValue;
+                    new FilesCountFactory().Create(folderPath, filesCount);
+                }
+                else if (parameter.EnumValue is HeaderCount)
+                {
+                    var headerCount = (HeaderCount)parameter.EnumValue;
+                    new HeaderCountFactory().Create(folderPath, headerCount);
+                }
+                else if (parameter.EnumValue is HeaderCount)
+                {
+                    var dataRowCount = (DataRowCount)parameter.EnumValue;
+                    new DataRowCountFactory().Create(dataRowCount);
+                }
+            }
+        }
+
+        void ITransitionDriver.Execute(Transition transition)
+        {            
+            var result = program.Run();
+            Validate((TestState)transition.Start, result);
+        }
+
+        private static void Validate(TestState state, Result result)
+        {
+            var expectedResult = state.Expectation as ExpectedResult;
+            if (expectedResult != null)
+            {
+                if (!expectedResult.Equals(result))
+                {
+                    throw new TestException("{0} Test Failed: Expected {1}, Actual {2}", "Data Machine", expectedResult, result);
+                }
+            }
         }
     }
 

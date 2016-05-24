@@ -10,13 +10,19 @@ namespace Automata
     {
         IParameter[] _parameters;
         Transition[] _transitions;
-        public State(IParameter[] parameters)
+        Random _random = new Random();
+        public State(IParameter[] parameters, Transition[] transitions)
         {
-            _parameters = parameters;//new Parameters(parameters);
+            _parameters = parameters;
+            _transitions = transitions;
+            foreach(var t in _transitions)
+            {
+                t.Start = this;
+            }
         }
 
-        public State(State state) : this(state.Parameters)
-        {            
+        public State(State state) : this(state.Parameters,state.Transitions)
+        {
             this.IsStart = state.IsStart;
             this.Transitions = state.Transitions;
             this.StateMachine = state.StateMachine;
@@ -30,12 +36,30 @@ namespace Automata
             set { _parameters = value; }
         }
 
-        public StateMachine StateMachine { get; internal set; }
+        public StateMachine StateMachine { get; set; }
 
         public Transition[] Transitions
         {
             get { return _transitions; }
             set { _transitions = value; }
+        }
+
+        public Transition Next()
+        {
+            var list = EnabledTransitions();
+            var pos = _random.Next(0, list.Count);
+            return list[pos];
+        }
+
+        public virtual void Execute(Transition transition)
+        {
+            StateMachine.Current = transition.End;
+            //EventFire();
+        }
+
+        private List<Transition> EnabledTransitions()
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -43,37 +67,19 @@ namespace Automata
     {
 
     }
-    /*
-    public class Parameters 
-    {
-        private List<Parameter> _parameters;
-        public Parameters(Parameter[] parameters)
-        {
-            if(parameters==null || parameters.Length==0)
-            {
-                new ArgumentException();
-            }
-            _parameters = new List<Parameter>();
-            _parameters.AddRange(_parameters);
-        }
-    }*/
 
-    public class Transition
+    public interface IResponse
     {
 
     }
-    /*
-    public class Transitions : IEnumerable<Transition>
+
+
+    public class Transition
     {
-        private List<Transition> _transitions;
-        public Transitions(Transition[] transitions)
-        {
-            if (transitions == null || transitions.Length == 0)
-            {
-                new ArgumentException();
-            }
-            _transitions = new List<Transition>();
-            _transitions.AddRange(transitions);
-        }
-    }*/
+        public State Start { get; set; }
+        public State End { get; set; }
+        public Action Action { get; set; }
+        //public List<IParameter> ActionArguments { get; set; }
+        //public IResponse Response { get; set; }
+    }
 }

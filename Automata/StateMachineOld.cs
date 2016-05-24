@@ -8,7 +8,7 @@ namespace Automata
 {
     public abstract class StateMachineOld : Automata
     {
-        protected State Current { get { return this.state; } set { this.state = value; } }
+        protected State Current { get; set; }
         protected abstract void Initialize();
         protected abstract void SetStart();
         protected abstract bool Execute();
