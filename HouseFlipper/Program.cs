@@ -31,14 +31,85 @@ namespace HouseFlipper
             {
                 dataFolder = GetDefaultFolder();
             }
-            Dictionary<string, FlippedHouse> subDivResults = new Dictionary<string, FlippedHouse>();
-            var zipResults = DataRead(subDivResults, dataFolder);
+            var indivSubDivResults = new Dictionary<string, FlippedHouse>();
+            var activeMultiKeyHash = new Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>>();
+            //var currentActiveHash = new Dictionary<string, MlsRow>();
+            var zipResults = DataRead(indivSubDivResults, /*currentActiveHash,*/ activeMultiKeyHash, dataFolder);
             PrintZipProfitabilityRanking(zipResults);
-            PrintSubDivProfitabilityRanking(subDivResults);
-            PrintSubDivAlphabetical(subDivResults);
+            
+            PrintSubDivProfitabilityRanking(indivSubDivResults);
+            var commonSubDivResults = PrintSubDivAlphabetical(indivSubDivResults);
+
+            PrintActiveWithinZip(zipResults, indivSubDivResults, activeMultiKeyHash);
+            PrintActiveWithinCommonSubDiv(zipResults, commonSubDivResults, activeMultiKeyHash);
+
             Console.WriteLine();
             Console.WriteLine("Program has ended. Hit any key to exit.");
             Console.ReadKey();
+        }
+
+        private static void PrintActiveWithinCommonSubDiv(Dictionary<string, FlippedHouse> zipResults, Dictionary<string, FlippedHouse> commonSubDivResults, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void PrintActiveWithinZip(Dictionary<string, FlippedHouse> zipResults, Dictionary<string, FlippedHouse> indivSubDivResults, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash)
+        {
+            var activeZipHouses = new Dictionary<string, List<MlsRow>>();
+            var activeSubDivHouses = new Dictionary<string, List<MlsRow>>();
+            foreach(var zip in zipResults.Keys)
+            {                
+                var eligibleZipHouses = new List<MlsRow>();
+                activeZipHouses.Add(zip, eligibleZipHouses);
+                var flipResults = zipResults[zip];
+                var subDivHash = activeMultiKeyHash[zip];
+                foreach(var subDiv in subDivHash.Keys)
+                {
+                    var eligibleSubDivHouses = new List<MlsRow>();
+                    activeSubDivHouses.Add(zip+"::"+subDiv,eligibleSubDivHouses);
+                    var houseHash = subDivHash[subDiv];
+                    foreach(var houseId in houseHash.Keys)
+                    {
+                        var records = houseHash[houseId];
+                        if(records.Count!=1)
+                        {
+                            throw new InvalidOperationException("Error: Don't know what to do with multiple active listings for the same house id!");
+                        }
+                        var house = records[0];
+                        if(house.CurrentPriceValue() <= 0.2 * flipResults.PreFlip.Price)
+                        {
+                            eligibleZipHouses.Add(house);
+                            eligibleSubDivHouses.Add(house);
+                        }
+                    }
+                }
+            }
+
+            foreach (var zip in activeZipHouses.Keys)
+            {
+                var flipResults = zipResults[zip];
+                var houses = activeZipHouses[zip];
+                var numHouses = houses.Count;
+                double newPrice = flipResults.PostFlip.Price;
+                Logger.Debug("Zipcode: {0} >> {1} Eligible houses within 20% of preflip price ${2}", zip, numHouses, ToString(newPrice));
+                Logger.Border();
+                var count = 0;
+                foreach (var house in houses)
+                {
+                    ++count;
+                    var homeAddress = house.Address + " " + house.City + " " + house.PostalCode;
+                    //var flipResults = zipResults[zip];
+                    double currentPrice = house.CurrentPriceValue();                    
+                    double profit = newPrice - currentPrice;
+                    Console.WriteLine(
+                        "{0}) {1}: {2} " +
+                        "in zip {3} has current price {4} can be sold for ${5} " +
+                        "Potential Profit: ${6}", 
+                        count, house.MLNumber, homeAddress, 
+                        zip, house.CurrentPrice, ToString(newPrice), 
+                        ToString(profit));
+                }
+            }
         }
 
         private static void PrintZipProfitabilityRanking(Dictionary<string, FlippedHouse> results)
@@ -70,10 +141,10 @@ namespace HouseFlipper
             Logger.Border();
         }
 
-        private static Dictionary<string, FlippedHouse> PrintSubDivAlphabetical(Dictionary<string, FlippedHouse> results)
+        private static Dictionary<string, FlippedHouse> PrintSubDivAlphabetical(Dictionary<string, FlippedHouse> indivSubDivResults)
         {
-            var commonSubDivHash = new Dictionary<string, FlippedHouse>(StringComparer.OrdinalIgnoreCase);
-            var list = results.Values.ToList();
+            var commonDivResults = new Dictionary<string, FlippedHouse>(StringComparer.OrdinalIgnoreCase);
+            var list = indivSubDivResults.Values.ToList();
             list.Sort(
                 (x, y) =>
                 {
@@ -99,14 +170,14 @@ namespace HouseFlipper
                 Console.WriteLine("{0}) ({1}) {2} PreFlip:[Sum={3},Count={4},AvgPrice={5}] PostFlip:[Sum={6},Count={7},AvgPrice={8}] => Profit:${9}", k + 1, next.City, next.Zipcode, next.PreFlip.Sum, next.PreFlip.Price, next.PreFlip.NumHouses, next.PostFlip.Sum, next.PostFlip.NumHouses, next.PostFlip.Price, ToString(next.Profit));
 
                 if (k == 0) { continue; }
-                AggregateByCommonSubDivision(commonSubDivHash, list, k, next);
+                AggregateByCommonSubDivision(commonDivResults, list, k, next);
             }
 
             Logger.Border();
-            var finalHash = PrintCommonSubDiv(commonSubDivHash);
-            PrintCommonByProfit(finalHash);
-            PrintCommonByCityThenProfit(finalHash);
-            return commonSubDivHash;
+            var bigSubDivResults = PrintCommonSubDiv(commonDivResults);
+            PrintCommonByProfit(bigSubDivResults);
+            PrintCommonByCityThenProfit(bigSubDivResults);
+            return commonDivResults;
         }
 
         private static void PrintCommonByProfit(Dictionary<string, FlippedHouse> finalHash)
@@ -156,7 +227,7 @@ namespace HouseFlipper
 
         private static Dictionary<string, FlippedHouse> PrintCommonSubDiv(Dictionary<string, FlippedHouse> commonSubDivHash)
         {
-            var finalHash = new Dictionary<string, FlippedHouse>();
+            var bigSubDivResults = new Dictionary<string, FlippedHouse>();
             var list = commonSubDivHash.Values.ToList();
             list.Sort(
                 (x, y) =>
@@ -181,7 +252,6 @@ namespace HouseFlipper
                 var next = list[k];
                 if (next.Aggregation.Count == 1) { continue; }
                 ++count;
-
 
                 var subDiv = next.SubDivision.Trim();
                 var updated = true;
@@ -249,7 +319,7 @@ namespace HouseFlipper
                 };
                 flipHouse.Aggregation = new List<FlippedHouse>();
                 flipHouse.Aggregation.AddRange(next.Aggregation);
-                finalHash.Add(subDiv, flipHouse);
+                bigSubDivResults.Add(subDiv, flipHouse);
 
                 /*
                 Console.WriteLine("\t [{0}]", next.SubDivision.Trim());
@@ -262,7 +332,7 @@ namespace HouseFlipper
             }
 
             Logger.Border();
-            return finalHash;
+            return bigSubDivResults;
         }
 
         private static void AggregateByCommonSubDivision(Dictionary<string, FlippedHouse> commonSubDivHash, List<FlippedHouse> list, int k, FlippedHouse next)
@@ -700,7 +770,7 @@ namespace HouseFlipper
             return commonName;
         }
 
-        private static Dictionary<string, FlippedHouse> DataRead(Dictionary<string, FlippedHouse> subDivResults, string dataFolder)
+        private static Dictionary<string, FlippedHouse> DataRead(Dictionary<string, FlippedHouse> subDivResults,/* Dictionary<string, MlsRow> currentActiveHash,*/ Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash, string dataFolder)
         {
             Logger.Debug("Using data folder: {0}", dataFolder);
             var subDirs = Directory.GetDirectories(dataFolder);
@@ -711,29 +781,31 @@ namespace HouseFlipper
             }
             List<MlsRow> mlsRows = new List<MlsRow>();
             var soldHash = new Dictionary<string, MlsRow>();
-            var flippedHash = new Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>>();
-            ReadFiles(files, mlsRows, soldHash, flippedHash);
+            //var currentActiveHash = new Dictionary<string, MlsRow>();
+            var flippedMultiKeyHash = new Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>>();
+            //var activeMultiKeyHash = new Dictionary< string, Dictionary<string, Dictionary<string, List<MlsRow>>>>();
+            ReadFiles(files, mlsRows, soldHash, /*currentActiveHash,*/ flippedMultiKeyHash, activeMultiKeyHash);
             var mlsData = new MlsData() { Data = mlsRows };
             var json = JsonConvert.SerializeObject(mlsData);
             FileIO.Write("mls.json", json);
             //Dictionary<string, FlippedHouse> subDivResults = new Dictionary<string, FlippedHouse>();
-            return PrintZipSummary(subDivResults, flippedHash);
+            return PrintZipSummary(subDivResults, flippedMultiKeyHash);
         }
 
-        private static Dictionary<string, FlippedHouse> PrintZipSummary(Dictionary<string, FlippedHouse> subDivResults, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash)
+        private static Dictionary<string, FlippedHouse> PrintZipSummary(Dictionary<string, FlippedHouse> subDivResults, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash)
         {
-            var results = new Dictionary<string, FlippedHouse>();
-            Console.WriteLine("Number of zipcodes with flipped houses: {0}", flippedHash.Keys.Count);
+            var zipResults = new Dictionary<string, FlippedHouse>();
+            Console.WriteLine("Number of zipcodes with flipped houses: {0}", flippedMultiKeyHash.Keys.Count);
             Logger.Border();
             var zipCount = 0;
             //Dictionary<string, FlippedHouse> subDivResults = new Dictionary<string, FlippedHouse>();
-            foreach (var zip in flippedHash.Keys)
+            foreach (var zip in flippedMultiKeyHash.Keys)
             {
                 ++zipCount;
-                PrintZip(subDivResults, flippedHash, results, zipCount, zip);
+                PrintZip(subDivResults, flippedMultiKeyHash, zipResults, zipCount, zip);
             }
 
-            return results;
+            return zipResults;
         }
 
         private static Dictionary<string, FlippedHouse> PrintZip(Dictionary<string, FlippedHouse> subDivResults, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash, Dictionary<string, FlippedHouse> zipResults, int zipCount, string zip)
@@ -889,18 +961,22 @@ namespace HouseFlipper
             string[] files,
             List<MlsRow> mlsRows,
             Dictionary<string, MlsRow> soldHash,
-            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash)
+            //Dictionary<string, MlsRow> currentActiveHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash)
         {
             foreach (var file in files)
             {
-                FileProcess(mlsRows, soldHash, flippedHash, file);
+                FileProcess(mlsRows, soldHash, /*currentActiveHash,*/ flippedMultiKeyHash, activeMultiKeyHash, file);
             }
         }
 
         private static void FileProcess(
             List<MlsRow> mlsRows,
             Dictionary<string, MlsRow> soldHash,
-            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash,
+            //Dictionary<string, MlsRow> currentActiveHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash,
             string file)
         {
             bool isFirstLine = true;
@@ -918,7 +994,7 @@ namespace HouseFlipper
                 }
                 else
                 {
-                    AggregateByZipCode(mlsRows, soldHash, flippedHash, colNames, fields);
+                    AggregateByZipCode(mlsRows, soldHash, /*currentActiveHash,*/ flippedMultiKeyHash, activeMultiKeyHash, colNames, fields);
                 }
             }
             if (rowNum == 0)
@@ -948,16 +1024,20 @@ namespace HouseFlipper
         }
 
         private static void AggregateByZipCode(
-            List<MlsRow> mlsRows,
+            List<MlsRow> mlsRows,            
             Dictionary<string, MlsRow> soldHash,
-            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash,
+            //Dictionary<string, MlsRow> currentActiveHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash,
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash,
             string[] colNames,
             string[] fields)
         {
             MlsRow record = AddRecord(mlsRows, colNames, fields);
-            AggregateBySold(soldHash, flippedHash, record);
-            //AggregateByActive(activeHash, flippedHash)
+            AggregateBySold(soldHash, flippedMultiKeyHash, record);
+            AggregateByActive(activeMultiKeyHash, /*currentActiveHash,*/ record);
         }
+
+        
 
         private static MlsRow AddRecord(List<MlsRow> mlsRows, string[] colNames, string[] fields)
         {
@@ -972,20 +1052,90 @@ namespace HouseFlipper
             return record;
         }
 
-        private static void AggregateBySold(Dictionary<string, MlsRow> soldHash, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash, MlsRow record)
+        private static void AggregateBySold(Dictionary<string, MlsRow> soldHash, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash, MlsRow record)
         {
             if (Sold(record))
             {
                 string houseID = PropertyAddress(record);
                 if (Contains(soldHash, houseID))
                 {
-                    AggregateFlips(soldHash, flippedHash, record, houseID);
+                    AggregateFlips(soldHash, flippedMultiKeyHash, record, houseID);
                 }
                 else
                 {
                     AddFirstSold(soldHash, record, houseID);
                 }
             }
+        }
+                                                                 //          zip =>           subDiv=>   activeList
+        private static void AggregateByActive(Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash, /*Dictionary<string, MlsRow> currentActiveHash,*/ MlsRow record)
+        {
+            if(Active(record))
+            {
+                var zip = ZipCode(record);
+                var subDiv = SubDivision(record);
+                string houseID = PropertyAddress(record);
+                AddActive(activeMultiKeyHash, /*currentActiveHash,*/ zip, subDiv, houseID, record);
+            }
+        }
+
+        private static void AddActive(
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> activeMultiKeyHash,
+            //Dictionary<string, MlsRow> currentActiveHash,
+            string zip, 
+            string subDiv, 
+            string houseID, 
+            MlsRow record)
+        {
+            zip = zip.ToLower().Trim();
+            subDiv = subDiv.ToLower().Trim();
+            houseID = houseID.ToLower().Trim();
+
+            Dictionary<string, Dictionary<string, List<MlsRow>>> subDivHash;
+            if (activeMultiKeyHash.ContainsKey(zip))
+            {
+                subDivHash = activeMultiKeyHash[zip];
+            }
+            else
+            {
+                subDivHash = new Dictionary<string, Dictionary<string, List<MlsRow>>>();
+                activeMultiKeyHash.Add(zip, subDivHash);
+            }
+
+            Dictionary<string, List<MlsRow>> houseHash;
+            if (subDivHash.ContainsKey(subDiv))
+            {
+                houseHash = subDivHash[subDiv];
+            }
+            else
+            {
+                houseHash = new Dictionary<string, List<MlsRow>>();
+                subDivHash.Add(subDiv, houseHash);
+            }
+
+            List<MlsRow> houseList;
+            if (houseHash.ContainsKey(houseID))
+            {
+                houseList = houseHash[subDiv];
+                throw new InvalidOperationException("Error: Not sure why  2 active records would exist for the same house id");
+            }
+            else
+            {
+                houseList = new List<MlsRow>();
+                houseHash.Add(houseID, houseList);
+            }
+
+            houseList.Add(record);
+
+            /*
+            if(currentActiveHash.ContainsKey(houseID))
+            {
+                throw new InvalidOperationException("Error: Not sure why  2 active records would exist for the same house id");
+            }
+            else
+            {
+                currentActiveHash.Add(houseID, record);
+            }*/
         }
 
         private static string SubDivision(MlsRow record)
@@ -1000,10 +1150,10 @@ namespace HouseFlipper
 
         private static void AggregateFlips(
             //          zip,              subdiv,           houseId,  soldList
-            Dictionary<string, MlsRow> soldHash, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash, MlsRow record, string houseID)
+            Dictionary<string, MlsRow> soldHash, Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash, MlsRow record, string houseID)
         {
             //         subDiv,            house,   soldList
-            Dictionary<string, Dictionary<string, List<MlsRow>>> subDivHash = AddSubDivsion(flippedHash, ZipCode(record));
+            Dictionary<string, Dictionary<string, List<MlsRow>>> subDivHash = AddSubDivsion(flippedMultiKeyHash, ZipCode(record));
             //         house,      
             Dictionary<string, List<MlsRow>> houseFlippedHash = AddHouseHash(record, subDivHash);
             AddFlippedHouse(soldHash, record, houseID, houseFlippedHash);
@@ -1057,17 +1207,17 @@ namespace HouseFlipper
         }
 
         private static Dictionary<string, Dictionary<string, List<MlsRow>>> AddSubDivsion(
-            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedHash, string zip)
+            Dictionary<string, Dictionary<string, Dictionary<string, List<MlsRow>>>> flippedMultiKeyHash, string zip)
         {
             Dictionary<string, Dictionary<string, List<MlsRow>>> subDivHash;
-            if (flippedHash.ContainsKey(zip))
+            if (flippedMultiKeyHash.ContainsKey(zip))
             {
-                subDivHash = flippedHash[zip];
+                subDivHash = flippedMultiKeyHash[zip];
             }
             else
             {
                 subDivHash = new Dictionary<string, Dictionary<string, List<MlsRow>>>();
-                flippedHash.Add(zip, subDivHash);
+                flippedMultiKeyHash.Add(zip, subDivHash);
             }
 
             return subDivHash;
@@ -1094,6 +1244,12 @@ namespace HouseFlipper
         {
             return record.StatusValue == MlsStatus.Sold;
         }
+
+        private static bool Active(MlsRow record)
+        {
+            return record.StatusValue == MlsStatus.Active;
+        }
+
 
         private static string ToString(double num)
         {
