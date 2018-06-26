@@ -1,8 +1,0 @@
-﻿{
-  "Environments": [ "Prod" ],
-  "Counters": [ "[KM Internal] Call Service", "[SA Internal] GetKey Call", "[SA Internal] Call"  ],
-  "Creds": {
-    "UserName": "ralph.joachim@docusign.com",
-    "Password":  "afadasfsdasadfasfsafasfsafsafsdafas"
-  }
-}
